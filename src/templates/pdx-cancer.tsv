@@ -1,19 +1,19 @@
 ID	Label	Parent	Synonyms (use | to split multiple)	Definition
 ID	A rdfs:label	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000115
 PDXO:0000001	musculoskeletal and soft tissue cancer			
-NCIT_C4016	Malignant Bone Neoplasm	musculoskeletal and soft tissue cancer		
-NCIT_C4883	Malignant Muscle Neoplasm	musculoskeletal and soft tissue cancer		
-NCIT_C4867	Malignant Soft Tissue Neoplasm	musculoskeletal and soft tissue cancer		
-NCIT_C9335	Malignant Breast Neoplasm			
-NCIT_C4767	Malignant Eye Neoplasm			
-NCIT_C2920	Malignant Skin Neoplasm			
-NCIT_C3576	Malignant Thoracic Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C4580	Malignant Chest Wall Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C45625	Malignant Lung and Pleural Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C3549	Malignant Mediastinal Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C3547	Malignant Pleural Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C8408	Malignant Sternal Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C4962	Malignant Thymus Neoplasm	Malignant Thoracic Neoplasm		
-NCIT_C4571	Malignant Respiratory Tract Neoplasm			
-NCIT_C7377	Malignant Lung Neoplasm	Malignant Respiratory Tract Neoplasm		
-NCIT_C9346	Malignant Tracheal Neoplasm	Malignant Respiratory Tract Neoplasm		
+NCIT:C4016	Malignant Bone Neoplasm	musculoskeletal and soft tissue cancer		
+NCIT:C4883	Malignant Muscle Neoplasm	musculoskeletal and soft tissue cancer		
+NCIT:C4867	Malignant Soft Tissue Neoplasm	musculoskeletal and soft tissue cancer		
+NCIT:C9335	Malignant Breast Neoplasm			
+NCIT:C4767	Malignant Eye Neoplasm			
+NCIT:C2920	Malignant Skin Neoplasm			
+NCIT:C3576	Malignant Thoracic Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C4580	Malignant Chest Wall Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C45625	Malignant Lung and Pleural Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C3549	Malignant Mediastinal Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C3547	Malignant Pleural Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C8408	Malignant Sternal Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C4962	Malignant Thymus Neoplasm	Malignant Thoracic Neoplasm		
+NCIT:C4571	Malignant Respiratory Tract Neoplasm			
+NCIT:C7377	Malignant Lung Neoplasm	Malignant Respiratory Tract Neoplasm		
+NCIT:C9346	Malignant Tracheal Neoplasm	Malignant Respiratory Tract Neoplasm		

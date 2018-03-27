@@ -29,8 +29,8 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-$(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+$(ONT).owl: $(SRC) pdx-generated.owl
+	$(ROBOT) merge --input $(SRC) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
@@ -39,7 +39,7 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input $(SRC) template --merge-before --prefix "PDX: https://github.com/zoependlington/pdx-ontology/PDX_" --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
+	$(ROBOT) merge --input $(SRC) template --merge-before --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
 
 # ----------------------------------------
 # Import modules

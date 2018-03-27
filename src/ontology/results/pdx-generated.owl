@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pdxo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pdxo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pdxo.owl">
+        <rdfs:comment>PDX Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- NCIT:C2920 -->
+
+    <owl:Class rdf:about="NCIT:C2920">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Skin Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C3547 -->
+
+    <owl:Class rdf:about="NCIT:C3547">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pleural Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C3549 -->
+
+    <owl:Class rdf:about="NCIT:C3549">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Mediastinal Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C3576 -->
+
+    <owl:Class rdf:about="NCIT:C3576">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thoracic Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4016 -->
+
+    <owl:Class rdf:about="NCIT:C4016">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bone Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C45625 -->
+
+    <owl:Class rdf:about="NCIT:C45625">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung and Pleural Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4571 -->
+
+    <owl:Class rdf:about="NCIT:C4571">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Respiratory Tract Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4580 -->
+
+    <owl:Class rdf:about="NCIT:C4580">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Chest Wall Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4767 -->
+
+    <owl:Class rdf:about="NCIT:C4767">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Eye Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4867 -->
+
+    <owl:Class rdf:about="NCIT:C4867">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Soft Tissue Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4883 -->
+
+    <owl:Class rdf:about="NCIT:C4883">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Muscle Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C4962 -->
+
+    <owl:Class rdf:about="NCIT:C4962">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thymus Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C7377 -->
+
+    <owl:Class rdf:about="NCIT:C7377">
+        <rdfs:subClassOf rdf:resource="NCIT:C4571"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C8408 -->
+
+    <owl:Class rdf:about="NCIT:C8408">
+        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Sternal Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C9335 -->
+
+    <owl:Class rdf:about="NCIT:C9335">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Breast Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- NCIT:C9346 -->
+
+    <owl:Class rdf:about="NCIT:C9346">
+        <rdfs:subClassOf rdf:resource="NCIT:C4571"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Tracheal Neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- PDXO:0000001 -->
+
+    <owl:Class rdf:about="PDXO:0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDXO_00000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_00000000">
+        <rdfs:label xml:lang="en">pdxo</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6) https://github.com/owlcs/owlapi -->
+
