@@ -39,7 +39,7 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --template ../templates/pdx-cancer.tsv --output $@
+	$(ROBOT) merge --input $(SRC).owl template --merge-before --template ../templates/pdx-cancer.tsv --output $@
 
 
 # ----------------------------------------
