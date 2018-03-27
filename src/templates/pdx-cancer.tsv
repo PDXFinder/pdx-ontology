@@ -1,8 +1,8 @@
 ID	Label	Parent	Synonyms (use | to split multiple)	Definition
 ID	A rdfs:label	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000115
 PDXO:0000001	musculoskeletal and soft tissue cancer			
-NCIT:C4016	Malignant Bone Neoplasm	musculoskeletal and soft tissue cancer		
-NCIT:C4883	Malignant Muscle Neoplasm	musculoskeletal and soft tissue cancer		
+NCIT_C4016	Malignant Bone Neoplasm	musculoskeletal and soft tissue cancer		
+NCIT_C4883	Malignant Muscle Neoplasm	musculoskeletal and soft tissue cancer		
 NCIT_C4867	Malignant Soft Tissue Neoplasm	musculoskeletal and soft tissue cancer		
 NCIT_C9335	Malignant Breast Neoplasm			
 NCIT_C4767	Malignant Eye Neoplasm			
