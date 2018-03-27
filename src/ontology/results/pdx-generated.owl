@@ -26,6 +26,7 @@
     <!-- NCIT:C114940 -->
 
     <owl:Class rdf:about="NCIT:C114940">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiovascular Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -43,6 +44,7 @@
     <!-- NCIT:C27134 -->
 
     <owl:Class rdf:about="NCIT:C27134">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Cell Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -60,6 +62,7 @@
     <!-- NCIT:C2852 -->
 
     <owl:Class rdf:about="NCIT:C2852">
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenocarcinoma</rdfs:label>
     </owl:Class>
     
@@ -77,6 +80,7 @@
     <!-- NCIT:C2916 -->
 
     <owl:Class rdf:about="NCIT:C2916">
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinoma</rdfs:label>
     </owl:Class>
     
@@ -85,6 +89,7 @@
     <!-- NCIT:C2920 -->
 
     <owl:Class rdf:about="NCIT:C2920">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Skin Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -94,6 +99,7 @@
 
     <owl:Class rdf:about="NCIT:C3161">
         <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukemia</rdfs:label>
     </owl:Class>
     
@@ -103,6 +109,7 @@
 
     <owl:Class rdf:about="NCIT:C3208">
         <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphoma</rdfs:label>
     </owl:Class>
     
@@ -112,6 +119,7 @@
 
     <owl:Class rdf:about="NCIT:C3242">
         <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma Cell Myeloma</rdfs:label>
     </owl:Class>
     
@@ -246,6 +254,7 @@
     <!-- NCIT:C3575 -->
 
     <owl:Class rdf:about="NCIT:C3575">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Endocrine Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -254,7 +263,7 @@
     <!-- NCIT:C3576 -->
 
     <owl:Class rdf:about="NCIT:C3576">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thoracic Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -263,6 +272,7 @@
     <!-- NCIT:C36076 -->
 
     <owl:Class rdf:about="NCIT:C36076">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Reproductive System Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -271,6 +281,7 @@
     <!-- NCIT:C3798 -->
 
     <owl:Class rdf:about="NCIT:C3798">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peripheral Nerve Sheath Tumor</rdfs:label>
     </owl:Class>
     
@@ -288,6 +299,7 @@
     <!-- NCIT:C4013 -->
 
     <owl:Class rdf:about="NCIT:C4013">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Head and Neck Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -296,7 +308,7 @@
     <!-- NCIT:C4016 -->
 
     <owl:Class rdf:about="NCIT:C4016">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bone Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -323,6 +335,7 @@
     <!-- NCIT:C4571 -->
 
     <owl:Class rdf:about="NCIT:C4571">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Respiratory Tract Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -358,6 +371,7 @@
     <!-- NCIT:C4767 -->
 
     <owl:Class rdf:about="NCIT:C4767">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Eye Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -366,6 +380,7 @@
     <!-- NCIT:C4788 -->
 
     <owl:Class rdf:about="NCIT:C4788">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nervous System Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -374,7 +389,7 @@
     <!-- NCIT:C4867 -->
 
     <owl:Class rdf:about="NCIT:C4867">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Soft Tissue Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -383,7 +398,7 @@
     <!-- NCIT:C4883 -->
 
     <owl:Class rdf:about="NCIT:C4883">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Muscle Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -392,6 +407,7 @@
     <!-- NCIT:C4890 -->
 
     <owl:Class rdf:about="NCIT:C4890">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Digestive System Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -445,6 +461,7 @@
     <!-- NCIT:C6930 -->
 
     <owl:Class rdf:about="NCIT:C6930">
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -471,6 +488,7 @@
     <!-- NCIT:C7337 -->
 
     <owl:Class rdf:about="NCIT:C7337">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peritoneal and Retroperitoneal Neoplasms</rdfs:label>
     </owl:Class>
     
@@ -677,6 +695,7 @@
     <!-- NCIT:C9118 -->
 
     <owl:Class rdf:about="NCIT:C9118">
+        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarcoma</rdfs:label>
     </owl:Class>
     
@@ -694,6 +713,7 @@
     <!-- NCIT:C9297 -->
 
     <owl:Class rdf:about="NCIT:C9297">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urinary System Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -747,6 +767,7 @@
     <!-- NCIT:C9335 -->
 
     <owl:Class rdf:about="NCIT:C9335">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Breast Neoplasm</rdfs:label>
     </owl:Class>
     
@@ -782,6 +803,23 @@
     <!-- PDXO:0000001 -->
 
     <owl:Class rdf:about="PDXO:0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- PDXO:0000002 -->
+
+    <owl:Class rdf:about="PDXO:0000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- PDXO:0000003 -->
+
+    <owl:Class rdf:about="PDXO:0000003">
+        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
     </owl:Class>
     
