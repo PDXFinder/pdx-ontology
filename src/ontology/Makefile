@@ -12,7 +12,7 @@ ROBOT= ../../bin/robot
 OWLTOOLS= ../../bin/owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
-NCIT = ../../imports/ncit.owl
+NCIT=http://purl.obolibrary.org/obo/ncit.owl
 
 # ----------------------------------------
 # Top-level targets
@@ -50,7 +50,7 @@ pdx-generated.owl:../templates/pdx-cancer.tsv
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 ### MY NOTES ###
-# Need to use SPARQL in order to create a ttl file of triples that are the NCIT slim annotation
+# Need to use SPARQL in order to create a .ttl file of triples that are the NCIT slim annotation
 # This then needs to be merged into the .owl file.
 # Also need to import the NCIT.owl file first into ROBOT
 
