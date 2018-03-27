@@ -39,11 +39,7 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) template --template pdx-cancer.tsv. \
-  --prefix "PDX: https://github.com/zoependlington/pdx-ontology/" \
-  --ontology-iri "https://github.com/zoependlington/pdx-ontology/blob/master/pdxo.owl" \
-  --output results/pdx-generated.owl
-
+	$(ROBOT) merge --input $(SRC) template --merge-before --prefix "PDX: https://github.com/zoependlington/pdx-ontology/PDX_" --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
 
 # ----------------------------------------
 # Import modules
