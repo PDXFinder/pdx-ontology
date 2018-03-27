@@ -12,7 +12,6 @@ ROBOT= ../../bin/robot
 OWLTOOLS= ../../bin/owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
-NCIT = ../ontology/imports/ncit.owl
 
 # ----------------------------------------
 # Top-level targets

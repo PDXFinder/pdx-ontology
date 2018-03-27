@@ -17,3 +17,76 @@ NCIT:C4962	Malignant Thymus Neoplasm	Malignant Thoracic Neoplasm
 NCIT:C4571	Malignant Respiratory Tract Neoplasm			
 NCIT:C7377	Malignant Lung Neoplasm	Malignant Respiratory Tract Neoplasm		
 NCIT:C9346	Malignant Tracheal Neoplasm	Malignant Respiratory Tract Neoplasm		
+NCIT:C7337	Peritoneal and Retroperitoneal Neoplasms			
+NCIT:C3537	Malignant Retroperitoneal Neoplasm	Peritoneal and Retroperitoneal Neoplasms		
+NCIT:C3538	Malignant Peritoneal Neoplasm	Peritoneal and Retroperitoneal Neoplasms		
+NCIT:C27134	Hematopoietic and Lymphoid Cell Neoplasm			
+NCIT:C3161	Leukemia	Hematopoietic and Lymphoid Cell Neoplasm		
+NCIT:C3208	Lymphoma	Hematopoietic and Lymphoid Cell Neoplasm		
+NCIT:C9290	Myeloid Neoplasm	Hematopoietic and Lymphoid Cell Neoplasm		
+NCIT:C3242	Plasma Cell Myeloma	Hematopoietic and Lymphoid Cell Neoplasm		
+NCIT:C7065	Lymphocytic Neoplasm	Hematopoietic and Lymphoid Cell Neoplasm		
+NCIT:C114940	Malignant Cardiovascular Neoplasm			
+NCIT:C3548	Malignant Cardiac Neoplasm	Malignant Cardiovascular Neoplasm		
+NCIT:C4575	Malignant Great Vessel Neoplasm	Malignant Cardiovascular Neoplasm		
+NCIT:C7390	Malignant Vascular Neoplasm	Malignant Cardiovascular Neoplasm		
+NCIT:C4890	Malignant Digestive System Neoplasm			
+NCIT:C3536	Malignant Ampulla of Vater Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C7379	Malignant Anal Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C9333	Malignant Appendix Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C7478	Malignant Esophageal Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C9331	Malignant Gastric Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C4978	Malignant Colorectal Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C7523	Malignant Small Intestinal Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C2898	Bile Duct Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C7481	Malignant Gallbladder Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C34803	Primary Malignant Liver Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C9005	Malignant Pancreatic Neoplasm	Malignant Digestive System Neoplasm		
+NCIT:C36076	Malignant Reproductive System Neoplasm			
+NCIT:C4913	Malignant Female Reproductive System Neoplasm	Malignant Reproductive System Neoplasm		
+NCIT:C7480	Malignant Fallopian Tube Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C7431	Malignant Ovarian Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C3555	Malignant Placental Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C126498	Malignant Uterine Ligament Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C3552	Malignant Uterine Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C9311	Malignant Cervical Neoplasm	Malignant Uterine Neoplasm		
+NCIT:C3556	Malignant Uterine Corpus Neoplasm	Malignant Uterine Neoplasm		
+NCIT:C7410	Malignant Vaginal Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C7502	Malignant Vulvar Neoplasm	Malignant Female Reproductive System Neoplasm		
+NCIT:C8561	Malignant Male Reproductive System Neoplasm	Malignant Reproductive System Neoplasm		
+NCIT:C7547	Malignant Penile Neoplasm	Malignant Male Reproductive System Neoplasm		
+NCIT:C7378	Malignant Prostate Neoplasm	Malignant Male Reproductive System Neoplasm		
+NCIT:C7251	Malignant Testicular Neoplasm	Malignant Male Reproductive System Neoplasm		
+NCIT:C4788	Malignant Nervous System Neoplasm			
+NCIT:C4627	Malignant Central Nervous System Neoplasm	Malignant Nervous System Neoplasm		
+NCIT:C3568	Malignant Brain Neoplasm	Malignant Central Nervous System Neoplasm		
+NCIT:C3572	Malignant Spinal Cord Neoplasm	Malignant Central Nervous System Neoplasm		
+NCIT:C3571	Malignant Cranial Nerve Neoplasm	Malignant Central Nervous System Neoplasm		
+NCIT:C3798	Malignant Peripheral Nerve Sheath Tumor			
+NCIT:C9341	Peripheral Primitive Neuroectodermal Tumor	Malignant Peripheral Nerve Sheath Tumor		
+NCIT:C4013	Malignant Head and Neck Neoplasm			
+NCIT:C9337	Malignant Ear Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C4918	Malignant Nasal Cavity Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C7484	Malignant Laryngeal Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C7545	Malignant Pharyngeal Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C7487	Malignant Paranasal Sinus Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C9316	Malignant Oral Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C3562	Malignant Orbit Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C3811	Malignant Salivary Gland Neoplasm	Malignant Head and Neck Neoplasm		
+NCIT:C3575	Malignant Endocrine Neoplasm			
+NCIT:C4906	Parathyroid Gland Carcinoma	Malignant Endocrine Neoplasm		
+NCIT:C4536	Pituitary Gland Carcinoma	Malignant Endocrine Neoplasm		
+NCIT:C27380	Thyroid Gland Adenocarcinoma	Malignant Endocrine Neoplasm		
+NCIT:C9297	Malignant Urinary System Neoplasm			
+NCIT:C9334	Malignant Bladder Neoplasm	Malignant Urinary System Neoplasm		
+NCIT:C7548	Malignant Kidney Neoplasm	Malignant Urinary System Neoplasm		
+NCIT:C7543	Malignant Ureter Neoplasm	Malignant Urinary System Neoplasm		
+NCIT:C7507	Malignant Urethral Neoplasm	Malignant Urinary System Neoplasm		
+NCIT:C7515	Renal Pelvis and Ureter Carcinoma	Malignant Urinary System Neoplasm		
+NCIT:C2916	Carcinoma			
+NCIT:C9118	Sarcoma			
+NCIT:C3242	Plasma Cell Myeloma			
+NCIT:C3161	Leukemia			
+NCIT:C3208	Lymphoma			
+NCIT:C6930	Mixed Neoplasm			
+NCIT:C2852	Adenocarcinoma			
