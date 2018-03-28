@@ -1,9 +1,9 @@
 import csv
-with open('pdx-cancer.tsv', 'rb') as f:
-    reader = csv.reader(f, delimiter='\t')
-    l = list(reader)
+with open('pdx-cancer.tsv', 'rb') as f: #opens the template file
+    reader = csv.reader(f, delimiter='\t') #reads it as a tsv
+    l = list(reader) #makes a list from tsv
 
-def extract(x):
+def extract(x): #extracts the ncit xrefs from the tsv id list
     global lst
     global xrefs
     xrefs = ('../ontology/results/ncit-xrefs.txt')
