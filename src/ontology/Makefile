@@ -12,12 +12,14 @@ ROBOT= ../../bin/robot
 OWLTOOLS= ../../bin/owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
+NCIT = ../../imports/ncit.owl
+GENERATED = ./results/pdx-generated.owl
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo
+all: sparql_test $(ONT).owl $(ONT).obo
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -48,25 +50,17 @@ pdx-generated.owl:../templates/pdx-cancer.tsv
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = ro
-IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
-# Make this target to regenerate ALL
-all_imports: $(IMPORTS_OWL)
+# sparql
 
-# Use ROBOT, driven entirely by terms lists NOT from source ontology
-imports/%_import.owl: mirror/%.owl imports/%_terms.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
-.PRECIOUS: imports/%_import.owl
+imports/ncit_import.txt: $(GENERATED) imports/ncit.owl
+	$(ROBOT) merge --input imports/ncit.owl --input $(GENERATED) query --select $(SPARQLDIR)/get_ncit_mappings.sparql imports/ncit_import.txt 
 
-# we use owltools for making the obo file until: https://github.com/ontodev/robot/issues/64
-imports/%_import.obo: imports/%_import.owl
-	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
+results/ncit_module.owl: imports/ncit_import.txt
+	$(ROBOT) extract  --method BOT --input imports/ncit.owl --term-file imports/ncit_import.txt --output results/ncit_module.owl
 
-# clone remote ontology locally, perfoming some excision of relations and annotations
-mirror/%.owl: $(SRC)
-	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
-.PRECIOUS: mirror/%.owl
+pdx_ncit_bridge.owl: $(GENERATED) imports/ncit.owl
+	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_ncit_bridge.sparql pdx_ncit_bridge.owl
 
 # ----------------------------------------
 # Release

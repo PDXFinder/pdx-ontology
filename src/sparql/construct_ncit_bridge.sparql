@@ -1,0 +1,18 @@
+PREFIX ncit: <http://purl.obolibrary.org/obo/ncit.owl>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+CONSTRUCT {
+?phenotype a owl:Class .
+?uri a owl:Class .
+?phenotype owl:equivalentClass ?uri
+}
+WHERE { 
+
+	?phenotype obo:NCIT_NHC0 ?xref .
+	FILTER regex( str(?phenotype), "NCIT_.*") 
+	FILTER regex( ?xref, "^PDX.*") 
+	BIND (concat ("http://purl.obolibrary.org/obo/", replace(?xref, "PDX:", "PDX_") ) as ?uri)
+
+}
