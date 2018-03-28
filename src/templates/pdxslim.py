@@ -10,8 +10,8 @@ def extract(x): #extracts the ncit xrefs from the tsv id list
     lst = [item[x] for item in l] #takes the first value of each nested list (IDs)
     lst = lst[2:] #removes the two rows of "titles"
     lst = [y for y in lst if "PDXO:" not in y] #removes any PDXO: xrefs
-    with open (xrefs, "w") as output: #writes the result to the slim.txt file
-        writer = csv.writer(output, lineterminator='\n')
+    with open (xrefs, "w") as output: #writes the result to the ncit-xrefs.txt file
+        writer = csv.writer(output, lineterminator='\n') #writes each xref to new line
         for xref in lst:
             writer.writerow([xref])
 
