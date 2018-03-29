@@ -803,6 +803,7 @@
     <!-- PDXO:0000001 -->
 
     <owl:Class rdf:about="PDXO:0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</rdfs:label>
     </owl:Class>
     
@@ -811,6 +812,7 @@
     <!-- PDXO:0000002 -->
 
     <owl:Class rdf:about="PDXO:0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</rdfs:label>
     </owl:Class>
     
