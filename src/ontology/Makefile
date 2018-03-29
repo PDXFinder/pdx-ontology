@@ -19,7 +19,7 @@ GENERATED = ./results/pdx-generated.owl
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(ONT).owl $(ONT).obo
+all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -50,17 +50,31 @@ pdx-generated.owl:../templates/pdx-cancer.tsv
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
+IMPORTS = ro
+IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
-# sparql
+# Make this target to regenerate ALL
+all_imports: $(IMPORTS_OWL)
 
-imports/ncit_import.txt: $(GENERATED) imports/ncit.owl
-	$(ROBOT) merge --input imports/ncit.owl --input $(GENERATED) query --select $(SPARQLDIR)/get_ncit_mappings.sparql imports/ncit_import.txt 
+# Use ROBOT, driven entirely by terms lists NOT from source ontology
+imports/%_import.owl: mirror/%.owl imports/%_terms.txt
+	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
+.PRECIOUS: imports/%_import.owl
 
-results/ncit_module.owl: imports/ncit_import.txt
-	$(ROBOT) extract  --method BOT --input imports/ncit.owl --term-file imports/ncit_import.txt --output results/ncit_module.owl
+# we use owltools for making the obo file until: https://github.com/ontodev/robot/issues/64
+imports/%_import.obo: imports/%_import.owl
+	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
 
-pdx_ncit_bridge.owl: $(GENERATED) imports/ncit.owl
-	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_ncit_bridge.sparql pdx_ncit_bridge.owl
+# clone remote ontology locally, perfoming some excision of relations and annotations
+mirror/%.owl: $(SRC)
+	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
+.PRECIOUS: mirror/%.owl
+
+# SLIM
+
+results/ncit_module.owl: results/ncit-xrefs.txt
+	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
+
 
 # ----------------------------------------
 # Release
