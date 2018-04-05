@@ -14,12 +14,13 @@ USECAT= --use-catalog
 SPARQLDIR = ../sparql
 NCIT = ../../imports/ncit.owl
 GENERATED = ./results/pdx-generated.owl
+PREFIX = "PDX: http://purl.obolibrary.org/obo/PDX_"
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl
+all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -36,12 +37,16 @@ $(ONT).owl: $(SRC) pdx-generated.owl
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
+$(ONT)_ncit_merged.owl: $(SRC) pdx-slim.owl $(NCIT)
+	$(ROBOT) merge --input $(SRC) --input pdx-slim.owl --input results/hp_module.owl reason -s true -m false -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)_hpo_merged.owl -o $@
+
+
 # ----------------------------------------
 # Templates
 # ----------------------------------------
 
 pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input $(SRC) template --merge-before --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
+	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
 
 # ----------------------------------------
 # Import modules
@@ -70,11 +75,19 @@ mirror/%.owl: $(SRC)
 	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
 .PRECIOUS: mirror/%.owl
 
-# SLIM
+# NCIT MODULE USING RESULT OF PYTHON
+# need to embed python script into make file!!!
 
 results/ncit_module.owl: results/ncit-xrefs.txt
 	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
+	
+pdx-slim.owl: $(GENERATED)
+	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
 
+## NEEDS EDITING
+
+pdx-ncit-merged.owl: pdx-slim.owl $(GENERATED) results/ncit_module.owl
+	owltools results/ncit_module.owl --map2slim --idfile slim.terms --write-gaf annotations.mapped.gaf
 
 # ----------------------------------------
 # Release
