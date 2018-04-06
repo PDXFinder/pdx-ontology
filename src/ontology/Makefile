@@ -89,7 +89,7 @@ results/ncit_module.owl: results/ncit-xrefs.txt
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
 
-## NEEDS EDITING
+## NEEDS EDITING - need to use owltools command?
 # owltools mp.obo --reasoner-query -r elk MP_0003631 --make-ontology-from-results http://x.org --load-instances mgi2mp.txt --remove-dangling-annotations --sim-basic -p sim.properties -o results.out
 
 # ----------------------------------------
