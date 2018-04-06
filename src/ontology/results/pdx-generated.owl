@@ -23,806 +23,779 @@
     
 
 
-    <!-- NCIT:C114940 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C114940 -->
 
-    <owl:Class rdf:about="NCIT:C114940">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C114940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiovascular Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C126498 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C126498 -->
 
-    <owl:Class rdf:about="NCIT:C126498">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C126498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Ligament Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C27134 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C27134 -->
 
-    <owl:Class rdf:about="NCIT:C27134">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C27134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Cell Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C27380 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C27380 -->
 
-    <owl:Class rdf:about="NCIT:C27380">
-        <rdfs:subClassOf rdf:resource="NCIT:C3575"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C27380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3575"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thyroid Gland Adenocarcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C2852 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C2852 -->
 
-    <owl:Class rdf:about="NCIT:C2852">
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenocarcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C2898 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C2898 -->
 
-    <owl:Class rdf:about="NCIT:C2898">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2898">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bile Duct Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C2916 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C2916 -->
 
-    <owl:Class rdf:about="NCIT:C2916">
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2916">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C2920 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C2920 -->
 
-    <owl:Class rdf:about="NCIT:C2920">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C2920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Skin Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3161 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3161 -->
 
-    <owl:Class rdf:about="NCIT:C3161">
-        <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukemia</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3208 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3208 -->
 
-    <owl:Class rdf:about="NCIT:C3208">
-        <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3242 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3242 -->
 
-    <owl:Class rdf:about="NCIT:C3242">
-        <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma Cell Myeloma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C34803 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C34803 -->
 
-    <owl:Class rdf:about="NCIT:C34803">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C34803">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Malignant Liver Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3536 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3536 -->
 
-    <owl:Class rdf:about="NCIT:C3536">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ampulla of Vater Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3537 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3537 -->
 
-    <owl:Class rdf:about="NCIT:C3537">
-        <rdfs:subClassOf rdf:resource="NCIT:C7337"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7337"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Retroperitoneal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3538 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3538 -->
 
-    <owl:Class rdf:about="NCIT:C3538">
-        <rdfs:subClassOf rdf:resource="NCIT:C7337"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7337"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peritoneal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3547 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3547 -->
 
-    <owl:Class rdf:about="NCIT:C3547">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pleural Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3548 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3548 -->
 
-    <owl:Class rdf:about="NCIT:C3548">
-        <rdfs:subClassOf rdf:resource="NCIT:C114940"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C114940"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiac Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3549 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3549 -->
 
-    <owl:Class rdf:about="NCIT:C3549">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Mediastinal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3552 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3552 -->
 
-    <owl:Class rdf:about="NCIT:C3552">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3555 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3555 -->
 
-    <owl:Class rdf:about="NCIT:C3555">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Placental Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3556 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3556 -->
 
-    <owl:Class rdf:about="NCIT:C3556">
-        <rdfs:subClassOf rdf:resource="NCIT:C3552"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3552"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Corpus Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3562 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3562 -->
 
-    <owl:Class rdf:about="NCIT:C3562">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Orbit Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3568 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3568 -->
 
-    <owl:Class rdf:about="NCIT:C3568">
-        <rdfs:subClassOf rdf:resource="NCIT:C4627"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4627"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Brain Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3571 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3571 -->
 
-    <owl:Class rdf:about="NCIT:C3571">
-        <rdfs:subClassOf rdf:resource="NCIT:C4627"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4627"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cranial Nerve Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3572 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3572 -->
 
-    <owl:Class rdf:about="NCIT:C3572">
-        <rdfs:subClassOf rdf:resource="NCIT:C4627"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3572">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4627"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Spinal Cord Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3575 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3575 -->
 
-    <owl:Class rdf:about="NCIT:C3575">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Endocrine Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3576 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3576 -->
 
-    <owl:Class rdf:about="NCIT:C3576">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thoracic Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C36076 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C36076 -->
 
-    <owl:Class rdf:about="NCIT:C36076">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C36076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Reproductive System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3798 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3798 -->
 
-    <owl:Class rdf:about="NCIT:C3798">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3798">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peripheral Nerve Sheath Tumor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C3811 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C3811 -->
 
-    <owl:Class rdf:about="NCIT:C3811">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C3811">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Salivary Gland Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4013 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4013 -->
 
-    <owl:Class rdf:about="NCIT:C4013">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Head and Neck Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4016 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4016 -->
 
-    <owl:Class rdf:about="NCIT:C4016">
-        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bone Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4536 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4536 -->
 
-    <owl:Class rdf:about="NCIT:C4536">
-        <rdfs:subClassOf rdf:resource="NCIT:C3575"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3575"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pituitary Gland Carcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C45625 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C45625 -->
 
-    <owl:Class rdf:about="NCIT:C45625">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C45625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung and Pleural Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4571 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4571 -->
 
-    <owl:Class rdf:about="NCIT:C4571">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Respiratory Tract Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4575 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4575 -->
 
-    <owl:Class rdf:about="NCIT:C4575">
-        <rdfs:subClassOf rdf:resource="NCIT:C114940"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C114940"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Great Vessel Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4580 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4580 -->
 
-    <owl:Class rdf:about="NCIT:C4580">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Chest Wall Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4627 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4627 -->
 
-    <owl:Class rdf:about="NCIT:C4627">
-        <rdfs:subClassOf rdf:resource="NCIT:C4788"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4788"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Central Nervous System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4767 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4767 -->
 
-    <owl:Class rdf:about="NCIT:C4767">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4767">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Eye Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4788 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4788 -->
 
-    <owl:Class rdf:about="NCIT:C4788">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4788">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nervous System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4867 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4867 -->
 
-    <owl:Class rdf:about="NCIT:C4867">
-        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4867">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Soft Tissue Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4883 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4883 -->
 
-    <owl:Class rdf:about="NCIT:C4883">
-        <rdfs:subClassOf rdf:resource="PDXO:0000003"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4883">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000003"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Muscle Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4890 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4890 -->
 
-    <owl:Class rdf:about="NCIT:C4890">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Digestive System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4906 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4906 -->
 
-    <owl:Class rdf:about="NCIT:C4906">
-        <rdfs:subClassOf rdf:resource="NCIT:C3575"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3575"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parathyroid Gland Carcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4913 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4913 -->
 
-    <owl:Class rdf:about="NCIT:C4913">
-        <rdfs:subClassOf rdf:resource="NCIT:C36076"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4913">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36076"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Female Reproductive System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4918 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4918 -->
 
-    <owl:Class rdf:about="NCIT:C4918">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nasal Cavity Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4962 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4962 -->
 
-    <owl:Class rdf:about="NCIT:C4962">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4962">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thymus Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C4978 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C4978 -->
 
-    <owl:Class rdf:about="NCIT:C4978">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Colorectal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C6930 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C6930 -->
 
-    <owl:Class rdf:about="NCIT:C6930">
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C6930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7065 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7065 -->
 
-    <owl:Class rdf:about="NCIT:C7065">
-        <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7251 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7251 -->
 
-    <owl:Class rdf:about="NCIT:C7251">
-        <rdfs:subClassOf rdf:resource="NCIT:C8561"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8561"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Testicular Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7337 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7337 -->
 
-    <owl:Class rdf:about="NCIT:C7337">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peritoneal and Retroperitoneal Neoplasms</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7377 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7377 -->
 
-    <owl:Class rdf:about="NCIT:C7377">
-        <rdfs:subClassOf rdf:resource="NCIT:C4571"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4571"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7378 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7378 -->
 
-    <owl:Class rdf:about="NCIT:C7378">
-        <rdfs:subClassOf rdf:resource="NCIT:C8561"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8561"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Prostate Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7379 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7379 -->
 
-    <owl:Class rdf:about="NCIT:C7379">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Anal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7390 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7390 -->
 
-    <owl:Class rdf:about="NCIT:C7390">
-        <rdfs:subClassOf rdf:resource="NCIT:C114940"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C114940"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vascular Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7410 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7410 -->
 
-    <owl:Class rdf:about="NCIT:C7410">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vaginal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7431 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7431 -->
 
-    <owl:Class rdf:about="NCIT:C7431">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ovarian Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7478 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7478 -->
 
-    <owl:Class rdf:about="NCIT:C7478">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Esophageal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7480 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7480 -->
 
-    <owl:Class rdf:about="NCIT:C7480">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Fallopian Tube Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7481 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7481 -->
 
-    <owl:Class rdf:about="NCIT:C7481">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7481">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gallbladder Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7484 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7484 -->
 
-    <owl:Class rdf:about="NCIT:C7484">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Laryngeal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7487 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7487 -->
 
-    <owl:Class rdf:about="NCIT:C7487">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Paranasal Sinus Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7502 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7502 -->
 
-    <owl:Class rdf:about="NCIT:C7502">
-        <rdfs:subClassOf rdf:resource="NCIT:C4913"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vulvar Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7507 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7507 -->
 
-    <owl:Class rdf:about="NCIT:C7507">
-        <rdfs:subClassOf rdf:resource="NCIT:C9297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urethral Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7515 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7515 -->
 
-    <owl:Class rdf:about="NCIT:C7515">
-        <rdfs:subClassOf rdf:resource="NCIT:C9297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renal Pelvis and Ureter Carcinoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7523 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7523 -->
 
-    <owl:Class rdf:about="NCIT:C7523">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Small Intestinal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7543 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7543 -->
 
-    <owl:Class rdf:about="NCIT:C7543">
-        <rdfs:subClassOf rdf:resource="NCIT:C9297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ureter Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7545 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7545 -->
 
-    <owl:Class rdf:about="NCIT:C7545">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pharyngeal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7547 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7547 -->
 
-    <owl:Class rdf:about="NCIT:C7547">
-        <rdfs:subClassOf rdf:resource="NCIT:C8561"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8561"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Penile Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C7548 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C7548 -->
 
-    <owl:Class rdf:about="NCIT:C7548">
-        <rdfs:subClassOf rdf:resource="NCIT:C9297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C7548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Kidney Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C8408 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C8408 -->
 
-    <owl:Class rdf:about="NCIT:C8408">
-        <rdfs:subClassOf rdf:resource="NCIT:C3576"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C8408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Sternal Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C8561 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C8561 -->
 
-    <owl:Class rdf:about="NCIT:C8561">
-        <rdfs:subClassOf rdf:resource="NCIT:C36076"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C8561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36076"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Male Reproductive System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9005 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9005 -->
 
-    <owl:Class rdf:about="NCIT:C9005">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pancreatic Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9118 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9118 -->
 
-    <owl:Class rdf:about="NCIT:C9118">
-        <rdfs:subClassOf rdf:resource="PDXO:0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000002"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarcoma</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9290 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9290 -->
 
-    <owl:Class rdf:about="NCIT:C9290">
-        <rdfs:subClassOf rdf:resource="NCIT:C27134"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeloid Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9297 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9297 -->
 
-    <owl:Class rdf:about="NCIT:C9297">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urinary System Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9311 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9311 -->
 
-    <owl:Class rdf:about="NCIT:C9311">
-        <rdfs:subClassOf rdf:resource="NCIT:C3552"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3552"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cervical Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9316 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9316 -->
 
-    <owl:Class rdf:about="NCIT:C9316">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Oral Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9331 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9331 -->
 
-    <owl:Class rdf:about="NCIT:C9331">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gastric Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9333 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9333 -->
 
-    <owl:Class rdf:about="NCIT:C9333">
-        <rdfs:subClassOf rdf:resource="NCIT:C4890"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Appendix Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9334 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9334 -->
 
-    <owl:Class rdf:about="NCIT:C9334">
-        <rdfs:subClassOf rdf:resource="NCIT:C9297"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bladder Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9335 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9335 -->
 
-    <owl:Class rdf:about="NCIT:C9335">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Breast Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9337 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9337 -->
 
-    <owl:Class rdf:about="NCIT:C9337">
-        <rdfs:subClassOf rdf:resource="NCIT:C4013"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ear Neoplasm</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9341 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9341 -->
 
-    <owl:Class rdf:about="NCIT:C9341">
-        <rdfs:subClassOf rdf:resource="NCIT:C3798"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3798"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peripheral Primitive Neuroectodermal Tumor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- NCIT:C9346 -->
+    <!-- http://purl.obolibrary.org/obo/NCIT_C9346 -->
 
-    <owl:Class rdf:about="NCIT:C9346">
-        <rdfs:subClassOf rdf:resource="NCIT:C4571"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C9346">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4571"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Tracheal Neoplasm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- PDXO:0000001 -->
-
-    <owl:Class rdf:about="PDXO:0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- PDXO:0000002 -->
-
-    <owl:Class rdf:about="PDXO:0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- PDXO:0000003 -->
-
-    <owl:Class rdf:about="PDXO:0000003">
-        <rdfs:subClassOf rdf:resource="PDXO:0000001"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
     </owl:Class>
     
 
@@ -831,6 +804,33 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_00000000">
         <rdfs:label xml:lang="en">pdxo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDXO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDXO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PDXO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

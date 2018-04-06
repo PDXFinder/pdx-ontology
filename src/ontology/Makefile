@@ -14,13 +14,14 @@ USECAT= --use-catalog
 SPARQLDIR = ../sparql
 NCIT = ../../imports/ncit.owl
 GENERATED = ./results/pdx-generated.owl
-PREFIX = "PDX: http://purl.obolibrary.org/obo/PDX_"
+PREFIX = "PDXO: http://purl.obolibrary.org/obo/PDXO_"
+NCITPREFIX = "NCIT: http://purl.obolibrary.org/obo/NCIT_"
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt
+all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -32,13 +33,13 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-$(ONT).owl: $(SRC) pdx-generated.owl
-	$(ROBOT) merge --input $(SRC) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+$(ONT).owl: $(SRC) pdx-module.owl
+	$(ROBOT) merge --input $(SRC) --input pdx-module.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
 $(ONT)_ncit_merged.owl: $(SRC) pdx-slim.owl $(NCIT)
-	$(ROBOT) merge --input $(SRC) --input pdx-slim.owl --input results/hp_module.owl reason -s true -m false -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)_hpo_merged.owl -o $@
+	$(ROBOT) merge --input $(SRC) --input pdx-slim.owl --input results/hp_module.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) reason -s true -m false -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)_hpo_merged.owl -o $@
 
 
 # ----------------------------------------
@@ -46,7 +47,7 @@ $(ONT)_ncit_merged.owl: $(SRC) pdx-slim.owl $(NCIT)
 # ----------------------------------------
 
 pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
+	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --prefix $(NCITPREFIX) --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
 
 # ----------------------------------------
 # Import modules
@@ -55,7 +56,7 @@ pdx-generated.owl:../templates/pdx-cancer.tsv
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = ro
+IMPORTS =
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 # Make this target to regenerate ALL
@@ -75,7 +76,10 @@ mirror/%.owl: $(SRC)
 	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
 .PRECIOUS: mirror/%.owl
 
-## MY ADDITIONS
+# ----------------------------------------
+# ADDITIONS
+# ----------------------------------------
+
 ### creating the ncit module
 
 results/ncit-xrefs.txt: ../templates/pdxslim.py
@@ -89,9 +93,12 @@ results/ncit_module.owl: results/ncit-xrefs.txt
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
 
-## NEEDS EDITING - need to use owltools command?
-# owltools mp.obo --reasoner-query -r elk MP_0003631 --make-ontology-from-results http://x.org --load-instances mgi2mp.txt --remove-dangling-annotations --sim-basic -p sim.properties -o results.out
+pdx-ncit.owl: $(GENERATED) results/ncit_module.owl pdx-slim.owl $(SRC)
+	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module.owl --input pdx-slim.owl --input $(SRC) --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
 
+pdx-module.owl: pdx-ncit.owl
+	$(OWLTOOLS) pdx-ncit.owl --extract-ontology-subset -u $(BASE).owl -s pdx_slim -o pdx-module.owl
+	
 # ----------------------------------------
 # Release
 # ----------------------------------------

@@ -7,275 +7,275 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix obo:   <http://purl.obolibrary.org/obo/> .
 
-<NCIT:C7547>  a            owl:Class ;
+obo:NCIT_C4575  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C2898>  a            owl:Class ;
+obo:NCIT_C3555  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9333>  a            owl:Class ;
+obo:NCIT_C3568  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9346>  a            owl:Class ;
+obo:NCIT_C7545  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4571>  a            owl:Class ;
+obo:NCIT_C4767  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C8561>  a            owl:Class ;
+obo:NCIT_C9331  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7390>  a            owl:Class ;
+obo:NCIT_C7379  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4016>  a            owl:Class ;
+obo:NCIT_C4918  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C27134>  a           owl:Class ;
+obo:NCIT_C45625  a         owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3536>  a            owl:Class ;
+obo:NCIT_C9316  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3549>  a            owl:Class ;
+obo:NCIT_C3562  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9118>  a            owl:Class ;
+obo:NCIT_C3242  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4883>  a            owl:Class ;
+obo:NCIT_C3575  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9005>  a            owl:Class ;
+obo:NCIT_C3547  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C36076>  a           owl:Class ;
-        oboInOwl:inSubset  "pdx_slim" .
-
-<NCIT:C3571>  a            owl:Class ;
+obo:NCIT_C7480  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:pdxo.owl  a            owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4962>  a            owl:Class ;
+obo:NCIT_C126498  a        owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3556>  a            owl:Class ;
+obo:NCIT_C7478  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4906>  a            owl:Class ;
+obo:NCIT_C7337  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3208>  a            owl:Class ;
+obo:NCIT_C27380  a         owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4890>  a            owl:Class ;
+obo:NCIT_C7378  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C126498>  a          owl:Class ;
+obo:NCIT_C7431  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4627>  a            owl:Class ;
+obo:NCIT_C2920  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7487>  a            owl:Class ;
+obo:NCIT_C8408  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4913>  a            owl:Class ;
+obo:NCIT_C4013  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3576>  a            owl:Class ;
+obo:NCIT_C34803  a         owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9311>  a            owl:Class ;
+obo:NCIT_C7523  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3548>  a            owl:Class ;
+obo:NCIT_C7065  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4788>  a            owl:Class ;
+obo:NCIT_C7410  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7481>  a            owl:Class ;
+obo:NCIT_C9297  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C45625>  a           owl:Class ;
+obo:PDXO_0000003  a        owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9337>  a            owl:Class ;
+obo:NCIT_C9335  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4867>  a            owl:Class ;
+obo:NCIT_C6930  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4575>  a            owl:Class ;
+obo:NCIT_C4978  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3555>  a            owl:Class ;
+obo:NCIT_C7502  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3568>  a            owl:Class ;
+obo:NCIT_C7543  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7545>  a            owl:Class ;
+obo:NCIT_C7515  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4767>  a            owl:Class ;
+obo:NCIT_C7251  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9331>  a            owl:Class ;
+obo:NCIT_C7377  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7379>  a            owl:Class ;
+obo:NCIT_C3538  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4918>  a            owl:Class ;
+obo:NCIT_C3161  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9316>  a            owl:Class ;
+obo:NCIT_C4580  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3562>  a            owl:Class ;
+obo:NCIT_C3811  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C27380>  a           owl:Class ;
+obo:NCIT_C7484  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3242>  a            owl:Class ;
+obo:PDXO_0000002  a        owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3575>  a            owl:Class ;
+obo:NCIT_C7507  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3547>  a            owl:Class ;
+obo:NCIT_C7548  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7480>  a            owl:Class ;
+obo:NCIT_C9334  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C34803>  a           owl:Class ;
+obo:NCIT_C9290  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7478>  a            owl:Class ;
+obo:NCIT_C3552  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7337>  a            owl:Class ;
+obo:NCIT_C2852  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7378>  a            owl:Class ;
+obo:NCIT_C3537  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7431>  a            owl:Class ;
+obo:NCIT_C9341  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C2920>  a            owl:Class ;
+obo:NCIT_C3798  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C8408>  a            owl:Class ;
+obo:NCIT_C2916  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4013>  a            owl:Class ;
+obo:NCIT_C4536  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<PDXO:0000003>  a          owl:Class ;
+obo:NCIT_C3572  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7523>  a            owl:Class ;
+obo:NCIT_C36076  a         owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7065>  a            owl:Class ;
+obo:PDXO_0000001  a        owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9297>  a            owl:Class ;
+obo:NCIT_C7547  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7410>  a            owl:Class ;
+obo:NCIT_C2898  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4978>  a            owl:Class ;
+obo:NCIT_C9333  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C6930>  a            owl:Class ;
+obo:NCIT_C9346  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9335>  a            owl:Class ;
+obo:NCIT_C4571  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7502>  a            owl:Class ;
+obo:NCIT_C7390  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7543>  a            owl:Class ;
+obo:NCIT_C8561  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7251>  a            owl:Class ;
+obo:NCIT_C4016  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7515>  a            owl:Class ;
+obo:NCIT_C3536  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7377>  a            owl:Class ;
+obo:NCIT_C3549  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3538>  a            owl:Class ;
+obo:NCIT_C9118  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3161>  a            owl:Class ;
+obo:NCIT_C4883  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4580>  a            owl:Class ;
+obo:NCIT_C9005  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3811>  a            owl:Class ;
+obo:NCIT_C114940  a        owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7484>  a            owl:Class ;
+obo:NCIT_C3571  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<PDXO:0000002>  a          owl:Class ;
+obo:NCIT_C27134  a         owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7507>  a            owl:Class ;
+obo:NCIT_C4962  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C7548>  a            owl:Class ;
+obo:NCIT_C3556  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9334>  a            owl:Class ;
+obo:NCIT_C4906  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C114940>  a          owl:Class ;
+obo:NCIT_C3208  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9290>  a            owl:Class ;
+obo:NCIT_C4890  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3552>  a            owl:Class ;
+obo:NCIT_C4627  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C2852>  a            owl:Class ;
+obo:NCIT_C7487  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3537>  a            owl:Class ;
+obo:NCIT_C4913  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C9341>  a            owl:Class ;
-        oboInOwl:inSubset  "pdx_slim" .
-
-<NCIT:C3798>  a            owl:Class ;
-        oboInOwl:inSubset  "pdx_slim" .
-
-<PDXO:0000001>  a          owl:Class ;
+obo:NCIT_C3576  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:PDXO_00000000  a       owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C2916>  a            owl:Class ;
+obo:NCIT_C9311  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C4536>  a            owl:Class ;
+obo:NCIT_C3548  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
 
-<NCIT:C3572>  a            owl:Class ;
+obo:NCIT_C4788  a          owl:Class ;
+        oboInOwl:inSubset  "pdx_slim" .
+
+obo:NCIT_C7481  a          owl:Class ;
+        oboInOwl:inSubset  "pdx_slim" .
+
+obo:NCIT_C9337  a          owl:Class ;
+        oboInOwl:inSubset  "pdx_slim" .
+
+obo:NCIT_C4867  a          owl:Class ;
         oboInOwl:inSubset  "pdx_slim" .
