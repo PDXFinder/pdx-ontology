@@ -21,7 +21,7 @@ NCITPREFIX = "NCIT: http://purl.obolibrary.org/obo/NCIT_"
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl
+all: sparql_test $(SRC) $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl release
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -33,13 +33,14 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
+$(SRC): pdx-module.owl
+	$(ROBOT) merge --input $(SRC) --input pdx-module.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) -o $@
+
 $(ONT).owl: $(SRC) pdx-module.owl
-	$(ROBOT) merge --input $(SRC) --input pdx-module.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT) merge --input $(SRC) --prefix $(PREFIX) --prefix $(NCITPREFIX) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+
 $(ONT).obo: $(ONT).owl
 	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
-
-$(ONT)_ncit_merged.owl: $(SRC) pdx-slim.owl $(NCIT)
-	$(ROBOT) merge --input $(SRC) --input pdx-slim.owl --input results/hp_module.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) reason -s true -m false -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT)_hpo_merged.owl -o $@
 
 
 # ----------------------------------------
@@ -93,8 +94,8 @@ results/ncit_module.owl: results/ncit-xrefs.txt
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
 
-pdx-ncit.owl: $(GENERATED) results/ncit_module.owl pdx-slim.owl $(SRC)
-	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module.owl --input pdx-slim.owl --input $(SRC) --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
+pdx-ncit.owl: $(GENERATED) results/ncit_module.owl pdx-slim.owl
+	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module.owl --input pdx-slim.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
 
 pdx-module.owl: pdx-ncit.owl
 	$(OWLTOOLS) pdx-ncit.owl --extract-ontology-subset -u $(BASE).owl -s pdx_slim -o pdx-module.owl
@@ -104,7 +105,8 @@ pdx-module.owl: pdx-ncit.owl
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 release: $(ONT).owl $(ONT).obo
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports &&\
+	echo "Release files are now at top level - now you should commit, push and make a release on github!"
 
 # ----------------------------------------
 # Sparql queries: Q/C
