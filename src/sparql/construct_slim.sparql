@@ -1,10 +1,11 @@
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 CONSTRUCT {
 	?s a owl:Class .
-	?s rdfs:comment "pdx_slim" . }
+	?s oboInOwl:inSubset "pdx_slim" . }
 
 WHERE { 
 	?s ?p ?o . }

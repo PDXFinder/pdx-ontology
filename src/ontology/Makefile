@@ -20,7 +20,7 @@ PREFIX = "PDX: http://purl.obolibrary.org/obo/PDX_"
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl
+all: sparql_test $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -75,19 +75,22 @@ mirror/%.owl: $(SRC)
 	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
 .PRECIOUS: mirror/%.owl
 
-# NCIT MODULE USING RESULT OF PYTHON
-# need to embed python script into make file!!!
+## MY ADDITIONS
+### creating the ncit module
+
+results/ncit-xrefs.txt: ../templates/pdxslim.py
+	python ../templates/pdxslim.py > results/ncit-xrefs.txt
 
 results/ncit_module.owl: results/ncit-xrefs.txt
 	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
 	
+### creating the slim
+
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
 
 ## NEEDS EDITING
-
-pdx-ncit-merged.owl: pdx-slim.owl $(GENERATED) results/ncit_module.owl
-	owltools results/ncit_module.owl --map2slim --idfile slim.terms --write-gaf annotations.mapped.gaf
+# owltools mp.obo --reasoner-query -r elk MP_0003631 --make-ontology-from-results http://x.org --load-instances mgi2mp.txt --remove-dangling-annotations --sim-basic -p sim.properties -o results.out
 
 # ----------------------------------------
 # Release

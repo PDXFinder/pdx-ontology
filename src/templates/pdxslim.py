@@ -1,5 +1,5 @@
 import csv
-with open('pdx-cancer.tsv', 'rb') as f: #opens the template file
+with open('../templates/pdx-cancer.tsv', 'rb') as f: #opens the template file
     reader = csv.reader(f, delimiter='\t') #reads it as a tsv
     l = list(reader) #makes a list from tsv
 
