@@ -91,4 +91,5 @@ NCIT:C3242	Plasma Cell Myeloma	morphological
 NCIT:C3161	Leukemia	morphological		
 NCIT:C3208	Lymphoma	morphological		
 NCIT:C6930	Mixed Neoplasm	morphological		
-NCIT:C2852	Adenocarcinoma	morphological		
+NCIT:C2852	Adenocarcinoma	morphological	
+PDXO:0000004	Test term	pdxo
