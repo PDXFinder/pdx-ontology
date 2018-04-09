@@ -21,7 +21,7 @@ NCITPREFIX = "NCIT: http://purl.obolibrary.org/obo/NCIT_"
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(SRC) $(ONT).owl $(ONT).obo results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl release
+all: sparql_test $(SRC) $(ONT).owl $(ONT).obo $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -47,8 +47,8 @@ $(ONT).obo: $(ONT).owl
 # Templates
 # ----------------------------------------
 
-pdx-generated.owl:../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --prefix $(NCITPREFIX) --template ../templates/pdx-cancer.tsv --output results/pdx-generated.owl
+$(GENERATED):../templates/pdx-cancer.tsv
+	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --prefix $(NCITPREFIX) --template ../templates/pdx-cancer.tsv --output $(GENERATED)
 
 # ----------------------------------------
 # Import modules
@@ -78,7 +78,7 @@ mirror/%.owl: $(SRC)
 .PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
-# ADDITIONS
+# Slim & Annotations
 # ----------------------------------------
 
 ### creating the ncit module
@@ -91,11 +91,21 @@ results/ncit_module.owl: results/ncit-xrefs.txt
 	
 ### creating the slim
 
+### SPARQL query
+### extracts the URIs and attaches inSubset pdx_slim to each term
+
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl
+	
+
+### Merging ttl with template terms, resulting in the slim annotation of "pdx_slim" being applied to the terms
+### no term annotations are added at this point
 
 pdx-ncit.owl: $(GENERATED) results/ncit_module.owl pdx-slim.owl
 	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module.owl --input pdx-slim.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
+
+### owltools extraction of annotations
+### adds ncit annotations to the merged slim and generated file.
 
 pdx-module.owl: pdx-ncit.owl
 	$(OWLTOOLS) pdx-ncit.owl --extract-ontology-subset -u $(BASE).owl -s pdx_slim -o pdx-module.owl
@@ -105,8 +115,7 @@ pdx-module.owl: pdx-ncit.owl
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 release: $(ONT).owl $(ONT).obo
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports &&\
-	echo "Release files are now at top level - now you should commit, push and make a release on github!"
+	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
 # Sparql queries: Q/C
