@@ -22,10 +22,10 @@ UPPER = ./imports/upper_class.owl
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(SRC) $(ONT).owl $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl #$(ONT).obo
+all: sparql_test $(SRC) $(ONT).owl $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl release
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT).owl $(RELEASEDIR) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
@@ -40,8 +40,6 @@ $(SRC): pdx-module.owl
 $(ONT).owl: $(SRC) pdx-module.owl
 	$(ROBOT) merge --input $(SRC) --prefix $(PREFIX) --prefix $(NCITPREFIX) reduce -r ELK annotate --ontology-iri $(BASE)/$(ONT).owl -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
 
 # ----------------------------------------
@@ -90,6 +88,7 @@ results/ncit-xrefs.txt: ../templates/pdxslim.py
 results/ncit_module.owl: results/ncit-xrefs.txt
 	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
 	
+# ensures all labels are of datatype string
 results/ncit_module2.owl: results/replacelabel.py
 	python results/replacelabel.py > results/ncit_module2.owl
 
@@ -118,7 +117,7 @@ pdx-module.owl: pdx-ncit.owl
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo
+release: $(ONT).owl
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
