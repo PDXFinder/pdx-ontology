@@ -2,280 +2,364 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
-@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xml:   <https://www.w3.org/TR/xml#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix obo:   <http://purl.obolibrary.org/obo/> .
 
 obo:NCIT_C4575  a          owl:Class ;
+        rdfs:label         "Malignant Great Vessel Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3555  a          owl:Class ;
+        rdfs:label         "Malignant Placental Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3568  a          owl:Class ;
+        rdfs:label         "Malignant Brain Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7545  a          owl:Class ;
+        rdfs:label         "Malignant Pharyngeal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4767  a          owl:Class ;
+        rdfs:label         "Malignant Eye Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9331  a          owl:Class ;
+        rdfs:label         "Malignant Gastric Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7379  a          owl:Class ;
+        rdfs:label         "Malignant Anal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4918  a          owl:Class ;
+        rdfs:label         "Malignant Nasal Cavity Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C45625  a         owl:Class ;
+        rdfs:label         "Malignant Lung and Pleural Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9316  a          owl:Class ;
+        rdfs:label         "Malignant Oral Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3562  a          owl:Class ;
+        rdfs:label         "Malignant Orbit Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3242  a          owl:Class ;
+        rdfs:label         "Plasma Cell Myeloma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3575  a          owl:Class ;
+        rdfs:label         "Malignant Endocrine Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3547  a          owl:Class ;
+        rdfs:label         "Malignant Pleural Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7480  a          owl:Class ;
-        oboInOwl:inSubset  "pdx_slim" .
-
-obo:pdxo.owl  a            owl:Class ;
+        rdfs:label         "Malignant Fallopian Tube Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C126498  a        owl:Class ;
+        rdfs:label         "Malignant Uterine Ligament Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7478  a          owl:Class ;
+        rdfs:label         "Malignant Esophageal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7337  a          owl:Class ;
+        rdfs:label         "Peritoneal and Retroperitoneal Neoplasms"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C27380  a         owl:Class ;
+        rdfs:label         "Thyroid Gland Adenocarcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7378  a          owl:Class ;
+        rdfs:label         "Malignant Prostate Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7431  a          owl:Class ;
+        rdfs:label         "Malignant Ovarian Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C2920  a          owl:Class ;
+        rdfs:label         "Malignant Skin Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C8408  a          owl:Class ;
+        rdfs:label         "Malignant Sternal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4013  a          owl:Class ;
+        rdfs:label         "Malignant Head and Neck Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C34803  a         owl:Class ;
+        rdfs:label         "Primary Malignant Liver Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7523  a          owl:Class ;
+        rdfs:label         "Malignant Small Intestinal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7065  a          owl:Class ;
+        rdfs:label         "Lymphocytic Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7410  a          owl:Class ;
+        rdfs:label         "Malignant Vaginal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9297  a          owl:Class ;
+        rdfs:label         "Malignant Urinary System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:PDXO_0000003  a        owl:Class ;
+        rdfs:label         "musculoskeletal and soft tissue cancer"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9335  a          owl:Class ;
+        rdfs:label         "Malignant Breast Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C6930  a          owl:Class ;
+        rdfs:label         "Mixed Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4978  a          owl:Class ;
+        rdfs:label         "Malignant Colorectal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7502  a          owl:Class ;
+        rdfs:label         "Malignant Vulvar Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7543  a          owl:Class ;
+        rdfs:label         "Malignant Ureter Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7515  a          owl:Class ;
+        rdfs:label         "Renal Pelvis and Ureter Carcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7251  a          owl:Class ;
+        rdfs:label         "Malignant Testicular Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7377  a          owl:Class ;
+        rdfs:label         "Malignant Lung Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3538  a          owl:Class ;
+        rdfs:label         "Malignant Peritoneal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3161  a          owl:Class ;
+        rdfs:label         "Leukemia"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4580  a          owl:Class ;
+        rdfs:label         "Malignant Chest Wall Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3811  a          owl:Class ;
+        rdfs:label         "Malignant Salivary Gland Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7484  a          owl:Class ;
+        rdfs:label         "Malignant Laryngeal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:PDXO_0000002  a        owl:Class ;
+        rdfs:label         "morphological"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7507  a          owl:Class ;
+        rdfs:label         "Malignant Urethral Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7548  a          owl:Class ;
+        rdfs:label         "Malignant Kidney Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9334  a          owl:Class ;
+        rdfs:label         "Malignant Bladder Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9290  a          owl:Class ;
+        rdfs:label         "Myeloid Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3552  a          owl:Class ;
+        rdfs:label         "Malignant Uterine Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C2852  a          owl:Class ;
+        rdfs:label         "Adenocarcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3537  a          owl:Class ;
+        rdfs:label         "Malignant Retroperitoneal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9341  a          owl:Class ;
+        rdfs:label         "Peripheral Primitive Neuroectodermal Tumor"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3798  a          owl:Class ;
+        rdfs:label         "Malignant Peripheral Nerve Sheath Tumor"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C2916  a          owl:Class ;
+        rdfs:label         "Carcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4536  a          owl:Class ;
+        rdfs:label         "Pituitary Gland Carcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3572  a          owl:Class ;
+        rdfs:label         "Malignant Spinal Cord Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C36076  a         owl:Class ;
+        rdfs:label         "Malignant Reproductive System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:PDXO_0000001  a        owl:Class ;
+        rdfs:label         "biological system"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7547  a          owl:Class ;
+        rdfs:label         "Malignant Penile Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C2898  a          owl:Class ;
+        rdfs:label         "Bile Duct Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9333  a          owl:Class ;
+        rdfs:label         "Malignant Appendix Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9346  a          owl:Class ;
+        rdfs:label         "Malignant Tracheal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4571  a          owl:Class ;
+        rdfs:label         "Malignant Respiratory Tract Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7390  a          owl:Class ;
+        rdfs:label         "Malignant Vascular Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C8561  a          owl:Class ;
+        rdfs:label         "Malignant Male Reproductive System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4016  a          owl:Class ;
+        rdfs:label         "Malignant Bone Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3536  a          owl:Class ;
+        rdfs:label         "Malignant Ampulla of Vater Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3549  a          owl:Class ;
+        rdfs:label         "Malignant Mediastinal Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9118  a          owl:Class ;
+        rdfs:label         "Sarcoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4883  a          owl:Class ;
+        rdfs:label         "Malignant Muscle Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9005  a          owl:Class ;
+        rdfs:label         "Malignant Pancreatic Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C114940  a        owl:Class ;
+        rdfs:label         "Malignant Cardiovascular Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3571  a          owl:Class ;
+        rdfs:label         "Malignant Cranial Nerve Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C27134  a         owl:Class ;
+        rdfs:label         "Hematopoietic and Lymphoid Cell Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4962  a          owl:Class ;
+        rdfs:label         "Malignant Thymus Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3556  a          owl:Class ;
+        rdfs:label         "Malignant Uterine Corpus Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4906  a          owl:Class ;
+        rdfs:label         "Parathyroid Gland Carcinoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3208  a          owl:Class ;
+        rdfs:label         "Lymphoma"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4890  a          owl:Class ;
+        rdfs:label         "Malignant Digestive System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4627  a          owl:Class ;
+        rdfs:label         "Malignant Central Nervous System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7487  a          owl:Class ;
+        rdfs:label         "Malignant Paranasal Sinus Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4913  a          owl:Class ;
+        rdfs:label         "Malignant Female Reproductive System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3576  a          owl:Class ;
-        oboInOwl:inSubset  "pdx_slim" .
-
-obo:PDXO_00000000  a       owl:Class ;
+        rdfs:label         "Malignant Thoracic Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9311  a          owl:Class ;
+        rdfs:label         "Malignant Cervical Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C3548  a          owl:Class ;
+        rdfs:label         "Malignant Cardiac Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4788  a          owl:Class ;
+        rdfs:label         "Malignant Nervous System Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C7481  a          owl:Class ;
+        rdfs:label         "Malignant Gallbladder Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C9337  a          owl:Class ;
+        rdfs:label         "Malignant Ear Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .
 
 obo:NCIT_C4867  a          owl:Class ;
+        rdfs:label         "Malignant Soft Tissue Neoplasm"^^xsd:string ;
         oboInOwl:inSubset  "pdx_slim" .

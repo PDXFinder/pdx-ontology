@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pdxo.owl"/>
     
@@ -299,6 +300,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -320,7 +327,7 @@
         <obo:NCIT_P108>Disease_Has_Associated_Anatomic_Site</obo:NCIT_P108>
         <obo:NCIT_P98>The role, Disease_Has_Associated_Anatomic_Site, is more general than the role, Disease_Has_Primary_Anatomic_Site.  Furthermore, when viewed with the role, Disease_Has_Metastatic_Anatomic_Site, there emerges a role hierarchy, where one role specializes the meaning of another, more general role.  Roles relating disease to anatomy start with a general assertion of association, often at very high level (e.g. Skin Disorder and Skin), and then add more specific primary/metastatic associations where appropriate for more specific concepts.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Disease_Has_Associated_Anatomic_Site</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Associated_Anatomic_Site</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Associated_Anatomic_Site</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R100"/>
@@ -348,7 +355,7 @@
         <obo:NCIT_P108>Disease_Has_Primary_Anatomic_Site</obo:NCIT_P108>
         <obo:NCIT_P98>This role can be viewed as a specialization of Disease_Has_Associated_Anatomic_Site.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Disease_Has_Primary_Anatomic_Site</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Primary_Anatomic_Site</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Primary_Anatomic_Site</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R101"/>
@@ -376,7 +383,7 @@
         <obo:NCIT_P108>Disease_Has_Normal_Tissue_Origin</obo:NCIT_P108>
         <obo:NCIT_P98>This non-defining role represents non-essential characteristics which are true in some, but not all, cases, yet have an association frequent enough to be of interest.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Disease_Has_Normal_Tissue_Origin</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Normal_Tissue_Origin</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Normal_Tissue_Origin</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R103"/>
@@ -403,7 +410,7 @@
         <obo:NCIT_P107>Has Normal Cell Origin</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Normal_Cell_Origin</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Normal_Cell_Origin</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Normal_Cell_Origin</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Normal_Cell_Origin</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R104"/>
@@ -430,7 +437,7 @@
         <obo:NCIT_P107>Has Abnormal Cell</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Abnormal_Cell</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Abnormal_Cell</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Abnormal_Cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Abnormal_Cell</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R105"/>
@@ -457,7 +464,7 @@
         <obo:NCIT_P107>Has Molecular Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Molecular_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Molecular_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Molecular_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Molecular_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R106"/>
@@ -484,7 +491,7 @@
         <obo:NCIT_P107>Has Cytogenetic Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Cytogenetic_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Cytogenetic_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Cytogenetic_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Cytogenetic_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R107"/>
@@ -511,7 +518,7 @@
         <obo:NCIT_P107>Has Finding</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Finding</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Finding</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Finding</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Finding</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R108"/>
@@ -538,7 +545,7 @@
         <obo:NCIT_P107>Is Grade</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Is_Grade</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Is_Grade</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Is_Grade</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Is_Grade</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R110"/>
@@ -565,7 +572,7 @@
         <obo:NCIT_P107>May Have Abnormal Cell</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_May_Have_Abnormal_Cell</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_May_Have_Abnormal_Cell</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_May_Have_Abnormal_Cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_May_Have_Abnormal_Cell</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R113"/>
@@ -592,7 +599,7 @@
         <obo:NCIT_P107>May Have Cytogenetic Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_May_Have_Cytogenetic_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_May_Have_Cytogenetic_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_May_Have_Cytogenetic_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_May_Have_Cytogenetic_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R114"/>
@@ -619,7 +626,7 @@
         <obo:NCIT_P107>May Have Finding</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_May_Have_Finding</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_May_Have_Finding</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_May_Have_Finding</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_May_Have_Finding</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R115"/>
@@ -646,7 +653,7 @@
         <obo:NCIT_P107>May Have Associated Disease</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_May_Have_Associated_Disease</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_May_Have_Associated_Disease</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_May_Have_Associated_Disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_May_Have_Associated_Disease</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R116"/>
@@ -673,7 +680,7 @@
         <obo:NCIT_P107>Has Associated Disease</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Has_Associated_Disease</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Has_Associated_Disease</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Has_Associated_Disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Has_Associated_Disease</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R126"/>
@@ -701,7 +708,7 @@
         <obo:NCIT_P108>Gene_Product_Is_Element_In_Pathway</obo:NCIT_P108>
         <obo:NCIT_P98>In NCI Thesaurus, pathways are derived from BioCarta and KEGG and are associated with genes and proteins that comprise these pathways.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Product_Is_Element_In_Pathway</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Is_Element_In_Pathway</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Is_Element_In_Pathway</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R131"/>
@@ -728,7 +735,7 @@
         <obo:NCIT_P107>Has Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Has_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Has_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Has_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Has_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R132"/>
@@ -755,7 +762,7 @@
         <obo:NCIT_P107>Has Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Has_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Has_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Has_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Has_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R133"/>
@@ -782,7 +789,7 @@
         <obo:NCIT_P107>Excludes Primary Anatomic Site</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Primary_Anatomic_Site</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Primary_Anatomic_Site</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Primary_Anatomic_Site</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Primary_Anatomic_Site</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R135"/>
@@ -809,7 +816,7 @@
         <obo:NCIT_P107>Excludes Normal Tissue Origin</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Normal_Tissue_Origin</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Normal_Tissue_Origin</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Normal_Tissue_Origin</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Normal_Tissue_Origin</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R137"/>
@@ -836,7 +843,7 @@
         <obo:NCIT_P107>Excludes Normal Cell Origin</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Normal_Cell_Origin</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Normal_Cell_Origin</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Normal_Cell_Origin</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Normal_Cell_Origin</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R138"/>
@@ -863,7 +870,7 @@
         <obo:NCIT_P107>Excludes Abnormal Cell</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Abnormal_Cell</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Abnormal_Cell</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Abnormal_Cell</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Abnormal_Cell</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R139"/>
@@ -890,7 +897,7 @@
         <obo:NCIT_P107>Excludes Molecular Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Molecular_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Molecular_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Molecular_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Molecular_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R140"/>
@@ -917,7 +924,7 @@
         <obo:NCIT_P107>Excludes Cytogenetic Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Cytogenetic_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Cytogenetic_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Cytogenetic_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Cytogenetic_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R141"/>
@@ -944,7 +951,7 @@
         <obo:NCIT_P107>Excludes Finding</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Excludes_Finding</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Excludes_Finding</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Excludes_Finding</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Excludes_Finding</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R142"/>
@@ -970,7 +977,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Cytogenetic_Abnormality_Involves_Chromosome</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Cytogenetic_Abnormality_Involves_Chromosome</oboInOwl:hasExactSynonym>
-        <rdfs:label>Cytogenetic_Abnormality_Involves_Chromosome</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytogenetic_Abnormality_Involves_Chromosome</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R173"/>
@@ -996,7 +1003,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Disease_Mapped_To_Chromosome</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Mapped_To_Chromosome</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Mapped_To_Chromosome</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Mapped_To_Chromosome</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R174"/>
@@ -1022,7 +1029,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Gene_Involved_In_Pathogenesis_Of_Disease</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Involved_In_Pathogenesis_Of_Disease</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Involved_In_Pathogenesis_Of_Disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Involved_In_Pathogenesis_Of_Disease</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R175"/>
@@ -1048,7 +1055,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Disease_Mapped_To_Gene</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Mapped_To_Gene</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Mapped_To_Gene</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Mapped_To_Gene</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R176"/>
@@ -1074,7 +1081,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Molecular_Abnormality_Involves_Gene</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Molecular_Abnormality_Involves_Gene</oboInOwl:hasExactSynonym>
-        <rdfs:label>Molecular_Abnormality_Involves_Gene</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular_Abnormality_Involves_Gene</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R177"/>
@@ -1100,7 +1107,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Gene_Mutant_Encodes_Gene_Product_Sequence_Variation</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Mutant_Encodes_Gene_Product_Sequence_Variation</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Mutant_Encodes_Gene_Product_Sequence_Variation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Mutant_Encodes_Gene_Product_Sequence_Variation</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R178"/>
@@ -1126,7 +1133,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Gene_Product_Sequence_Variation_Encoded_By_Gene_Mutant</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Sequence_Variation_Encoded_By_Gene_Mutant</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Sequence_Variation_Encoded_By_Gene_Mutant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Sequence_Variation_Encoded_By_Gene_Mutant</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R179"/>
@@ -1152,7 +1159,7 @@
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
         <obo:NCIT_P108>Gene_Product_Variant_Of_Gene_Product</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Variant_Of_Gene_Product</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Variant_Of_Gene_Product</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Variant_Of_Gene_Product</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R182"/>
@@ -1179,7 +1186,7 @@
         <obo:NCIT_P107>Has Initiator Process</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Initiator_Process</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Initiator_Process</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Initiator_Process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Initiator_Process</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R28"/>
@@ -1206,7 +1213,7 @@
         <obo:NCIT_P107>Has Result Chemical Or Drug</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Result_Chemical_Or_Drug</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Result_Chemical_Or_Drug</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Result_Chemical_Or_Drug</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Result_Chemical_Or_Drug</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R29"/>
@@ -1233,7 +1240,7 @@
         <obo:NCIT_P107>Has Associated Location</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Associated_Location</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Associated_Location</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Associated_Location</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Associated_Location</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R30"/>
@@ -1260,7 +1267,7 @@
         <obo:NCIT_P107>Has Result Anatomy</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Result_Anatomy</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Result_Anatomy</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Result_Anatomy</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Result_Anatomy</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R31"/>
@@ -1287,7 +1294,7 @@
         <obo:NCIT_P107>Has Initiator Chemical Or Drug</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Initiator_Chemical_Or_Drug</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Initiator_Chemical_Or_Drug</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Initiator_Chemical_Or_Drug</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Initiator_Chemical_Or_Drug</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R32"/>
@@ -1314,7 +1321,7 @@
         <obo:NCIT_P107>Has Result Biological Process</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Has_Result_Biological_Process</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Has_Result_Biological_Process</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Has_Result_Biological_Process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Has_Result_Biological_Process</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R34"/>
@@ -1341,7 +1348,7 @@
         <obo:NCIT_P107>Is Part Of Process</obo:NCIT_P107>
         <obo:NCIT_P108>Biological_Process_Is_Part_Of_Process</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Biological_Process_Is_Part_Of_Process</oboInOwl:hasExactSynonym>
-        <rdfs:label>Biological_Process_Is_Part_Of_Process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological_Process_Is_Part_Of_Process</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R35"/>
@@ -1368,7 +1375,7 @@
         <obo:NCIT_P107>Plays Role In Process</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Plays_Role_In_Process</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Plays_Role_In_Process</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Plays_Role_In_Process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Plays_Role_In_Process</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R37"/>
@@ -1395,7 +1402,7 @@
         <obo:NCIT_P107>Associated With Disease</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Associated_With_Disease</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Associated_With_Disease</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Associated_With_Disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Associated_With_Disease</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R38"/>
@@ -1419,7 +1426,7 @@
         <obo:IAO_0000115>A role used to assert that expression or alteration of a gene is correlated with a particular disease or disease state or is predictive of the disease or disease state. The domain and range for this role are &apos;Gene&apos; and Findings_and_Disorder_Kind, respectively.</obo:IAO_0000115>
         <obo:NCIT_NHC0>R39</obo:NCIT_NHC0>
         <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
-        <rdfs:label>Gene_Is_Biomarker_Of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Is_Biomarker_Of</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R39"/>
@@ -1439,7 +1446,7 @@
         <obo:NCIT_P107>In Chromosomal Location</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_In_Chromosomal_Location</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_In_Chromosomal_Location</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_In_Chromosomal_Location</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_In_Chromosomal_Location</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R40"/>
@@ -1467,7 +1474,7 @@
         <obo:NCIT_P108>Gene_Found_In_Organism</obo:NCIT_P108>
         <obo:NCIT_P98>Currently, we only model human genes, but this role has obvious utility in future, if other organisms are modeled as well.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Found_In_Organism</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Found_In_Organism</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Found_In_Organism</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R41"/>
@@ -1494,7 +1501,7 @@
         <obo:NCIT_P107>Is Biomarker Type</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Is_Biomarker_Type</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Is_Biomarker_Type</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Is_Biomarker_Type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Is_Biomarker_Type</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R42"/>
@@ -1521,7 +1528,7 @@
         <obo:NCIT_P107>Has Organism Source</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Has_Organism_Source</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Has_Organism_Source</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Has_Organism_Source</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Has_Organism_Source</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R45"/>
@@ -1548,7 +1555,7 @@
         <obo:NCIT_P107>Has Associated Anatomy</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Has_Associated_Anatomy</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Has_Associated_Anatomy</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Has_Associated_Anatomy</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Has_Associated_Anatomy</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R46"/>
@@ -1575,7 +1582,7 @@
         <obo:NCIT_P107>Malfunction Associated With Disease</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Malfunction_Associated_With_Disease</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Malfunction_Associated_With_Disease</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Malfunction_Associated_With_Disease</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Malfunction_Associated_With_Disease</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R48"/>
@@ -1603,7 +1610,7 @@
         <obo:NCIT_P108>Gene_Product_Expressed_In_Tissue</obo:NCIT_P108>
         <obo:NCIT_P98>This information is often useful to researchers. However, we no longer curate this information and now favor linking out to externally curated databases. Source database for the link has yet to be decided.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Product_Expressed_In_Tissue</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Expressed_In_Tissue</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Expressed_In_Tissue</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R49"/>
@@ -1631,7 +1638,7 @@
         <obo:NCIT_P108>Gene_Product_Has_Structural_Domain_Or_Motif</obo:NCIT_P108>
         <obo:NCIT_P98>We no longer curate this information and now favor linking out to externally curated databases. The source database for the link has yet to be decided.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Product_Has_Structural_Domain_Or_Motif</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Has_Structural_Domain_Or_Motif</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Has_Structural_Domain_Or_Motif</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R50"/>
@@ -1658,7 +1665,7 @@
         <obo:NCIT_P107>Is Physical Part Of</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Is_Physical_Part_Of</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Is_Physical_Part_Of</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Is_Physical_Part_Of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Is_Physical_Part_Of</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R51"/>
@@ -1685,7 +1692,7 @@
         <obo:NCIT_P107>Has Biochemical Function</obo:NCIT_P107>
         <obo:NCIT_P108>Gene_Product_Has_Biochemical_Function</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Gene_Product_Has_Biochemical_Function</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Has_Biochemical_Function</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Has_Biochemical_Function</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R52"/>
@@ -1713,7 +1720,7 @@
         <obo:NCIT_P108>Gene_Product_Plays_Role_In_Biological_Process</obo:NCIT_P108>
         <obo:NCIT_P98>Considered by most researchers to be essential, definitional information about a gene product.</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Product_Plays_Role_In_Biological_Process</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Plays_Role_In_Biological_Process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Plays_Role_In_Biological_Process</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R53"/>
@@ -1741,7 +1748,7 @@
         <obo:NCIT_P108>Gene_Product_Encoded_By_Gene</obo:NCIT_P108>
         <obo:NCIT_P98>The reciprocal relationship is represented in the property Gene_Encodes_Product</obo:NCIT_P98>
         <oboInOwl:hasExactSynonym>Gene_Product_Encoded_By_Gene</oboInOwl:hasExactSynonym>
-        <rdfs:label>Gene_Product_Encoded_By_Gene</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene_Product_Encoded_By_Gene</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R54"/>
@@ -1769,7 +1776,7 @@
         <obo:NCIT_P107>Has Location</obo:NCIT_P107>
         <obo:NCIT_P108>Anatomic_Structure_Has_Location</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Anatomic_Structure_Has_Location</oboInOwl:hasExactSynonym>
-        <rdfs:label>Anatomic_Structure_Has_Location</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomic_Structure_Has_Location</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R81"/>
@@ -1797,7 +1804,7 @@
         <obo:NCIT_P107>Is Physical Part Of</obo:NCIT_P107>
         <obo:NCIT_P108>Anatomic_Structure_Is_Physical_Part_Of</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Anatomic_Structure_Is_Physical_Part_Of</oboInOwl:hasExactSynonym>
-        <rdfs:label>Anatomic_Structure_Is_Physical_Part_Of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomic_Structure_Is_Physical_Part_Of</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R82"/>
@@ -1824,7 +1831,7 @@
         <obo:NCIT_P107>Is Stage</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_Is_Stage</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_Is_Stage</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_Is_Stage</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_Is_Stage</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R88"/>
@@ -1851,7 +1858,7 @@
         <obo:NCIT_P107>May Have Molecular Abnormality</obo:NCIT_P107>
         <obo:NCIT_P108>Disease_May_Have_Molecular_Abnormality</obo:NCIT_P108>
         <oboInOwl:hasExactSynonym>Disease_May_Have_Molecular_Abnormality</oboInOwl:hasExactSynonym>
-        <rdfs:label>Disease_May_Have_Molecular_Abnormality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease_May_Have_Molecular_Abnormality</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_R89"/>
@@ -1895,8 +1902,8 @@
         <oboInOwl:hasExactSynonym>Malignant Cardiovascular Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Cardiovascular Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiovascular Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiovascular Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C114940"/>
@@ -1926,8 +1933,8 @@
         <obo:NCIT_P363>Malignant</obo:NCIT_P363>
         <oboInOwl:hasExactSynonym>Malignant Uterine Ligament Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Uterine Ligament Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Ligament Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Ligament Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C126498"/>
@@ -1989,8 +1996,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Hematopoietic and Lymphoid Cell Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Cell Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematopoietic and Lymphoid Cell Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27134"/>
@@ -2162,8 +2169,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C126659"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Thyroid Gland Adenocarcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thyroid Gland Adenocarcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thyroid Gland Adenocarcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27380"/>
@@ -2223,8 +2230,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Adenocarcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenocarcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adenocarcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2852"/>
@@ -2303,8 +2310,8 @@
         <oboInOwl:hasExactSynonym>Intrahepatic and Extrahepatic Bile Duct Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Intrahepatic and Extrahepatic Bile Duct Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Bile Duct Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bile Duct Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bile Duct Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2898"/>
@@ -2381,8 +2388,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Carcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2916"/>
@@ -2561,8 +2568,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103115"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Skin Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Skin Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Skin Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C2920"/>
@@ -2720,8 +2727,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C99147"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Leukemia</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukemia</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukemia</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3161"/>
@@ -2903,8 +2910,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Lymphoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3208"/>
@@ -3094,8 +3101,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Plasma Cell Myeloma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma Cell Myeloma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma Cell Myeloma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3242"/>
@@ -3258,8 +3265,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C99147"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Primary Malignant Liver Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Malignant Liver Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Malignant Liver Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C34803"/>
@@ -3323,8 +3330,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Ampulla of Vater</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Ampulla of Vater</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Ampulla of Vater Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ampulla of Vater Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ampulla of Vater Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3536"/>
@@ -3390,8 +3397,8 @@
         <obo:NCIT_P366>Malignant_Retroperitoneal_Neoplasm</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Malignant Retroperitoneal Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Retroperitoneal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Retroperitoneal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Retroperitoneal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3537"/>
@@ -3428,8 +3435,8 @@
         <oboInOwl:hasExactSynonym>Peritoneal Cavity Cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>peritoneal cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Peritoneal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peritoneal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peritoneal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3538"/>
@@ -3513,8 +3520,8 @@
         <oboInOwl:hasExactSynonym>Pleural Cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Pleural Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pleural Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pleural Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3547"/>
@@ -3613,8 +3620,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Heart</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>heart cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Cardiac Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiac Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cardiac Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3548"/>
@@ -3734,8 +3741,8 @@
         <oboInOwl:hasExactSynonym>Mediastinal Cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Mediastinal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Mediastinal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Mediastinal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3549"/>
@@ -3846,8 +3853,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103103"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Uterine Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3552"/>
@@ -3970,8 +3977,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Placental Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Placental Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Placental Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3555"/>
@@ -4115,8 +4122,8 @@
         <oboInOwl:hasExactSynonym>Malignant Uterine Corpus Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Uterine Corpus Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Uterine Corpus Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Corpus Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Uterine Corpus Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3556"/>
@@ -4217,8 +4224,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Orbit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Orbit</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Orbit Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Orbit Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Orbit Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3562"/>
@@ -4317,8 +4324,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C118464"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Brain Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Brain Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Brain Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3568"/>
@@ -4446,8 +4453,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Cranial Nerve</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Cranial Nerve</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Cranial Nerve Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cranial Nerve Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cranial Nerve Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3571"/>
@@ -4527,8 +4534,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Spinal Cord</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>spine cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Spinal Cord Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Spinal Cord Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Spinal Cord Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3572"/>
@@ -4625,8 +4632,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103056"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Endocrine Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Endocrine Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Endocrine Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3575"/>
@@ -4751,8 +4758,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Thorax</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Thoracic Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thoracic Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thoracic Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3576"/>
@@ -4818,8 +4825,8 @@
         <obo:NCIT_P366>Malignant_Reproductive_System_Neoplasm</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Malignant Reproductive System Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Reproductive System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Reproductive System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Reproductive System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C36076"/>
@@ -4882,8 +4889,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88025"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Peripheral Nerve Sheath Tumor</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peripheral Nerve Sheath Tumor</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Peripheral Nerve Sheath Tumor</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3798"/>
@@ -5098,8 +5105,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103077"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Salivary Gland Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Salivary Gland Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Salivary Gland Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C3811"/>
@@ -5226,8 +5233,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103073"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Head and Neck Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Head and Neck Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Head and Neck Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4013"/>
@@ -5343,6 +5350,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C4016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000003"/>
         <obo:IAO_0000115>A primary or metastatic malignant neoplasm affecting the bone or articular cartilage.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this is a test definition 2</obo:IAO_0000115>
         <obo:NCIT_A11 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9305"/>
         <obo:NCIT_A14 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9292"/>
         <obo:NCIT_NHC0>C4016</obo:NCIT_NHC0>
@@ -5381,8 +5389,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Bone Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bone Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bone Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4016"/>
@@ -5571,8 +5579,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Pituitary Gland Carcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pituitary Gland Carcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pituitary Gland Carcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4536"/>
@@ -5703,8 +5711,8 @@
         <obo:NCIT_P366>Malignant_Lung_and_Pleural_Neoplasm</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Malignant Lung and Pleural Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Lung and Pleural Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung and Pleural Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung and Pleural Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C45625"/>
@@ -5740,8 +5748,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Respiratory Tract</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Respiratory Tract</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Respiratory Tract Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Respiratory Tract Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Respiratory Tract Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4571"/>
@@ -5809,8 +5817,8 @@
         <oboInOwl:hasExactSynonym>Malignant Great Vessel Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Great Vessel Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Great Vessel Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Great Vessel Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Great Vessel Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4575"/>
@@ -5860,8 +5868,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Chest Wall</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Chest Wall</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Chest Wall Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Chest Wall Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Chest Wall Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4580"/>
@@ -5951,8 +5959,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Central Nervous System</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Central Nervous System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Central Nervous System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Central Nervous System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4627"/>
@@ -6153,8 +6161,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138188"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Eye Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Eye Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Eye Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4767"/>
@@ -6312,8 +6320,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Nervous System</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nervous System Neoplasms, Malignant</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Nervous System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nervous System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nervous System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4788"/>
@@ -6391,8 +6399,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Soft Tissue</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Soft Tissue</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Soft Tissue Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Soft Tissue Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Soft Tissue Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4867"/>
@@ -6468,8 +6476,8 @@
         <oboInOwl:hasExactSynonym>Myosarcoma</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Muscle Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Muscle Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Muscle Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4883"/>
@@ -6552,8 +6560,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103065"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Digestive System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Digestive System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Digestive System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4890"/>
@@ -6658,8 +6666,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138188"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Parathyroid Gland Carcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parathyroid Gland Carcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parathyroid Gland Carcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4906"/>
@@ -6858,8 +6866,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103100"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Female Reproductive System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Female Reproductive System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Female Reproductive System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4913"/>
@@ -6997,8 +7005,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Nasal Cavity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Nasal Cavity</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Nasal Cavity Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nasal Cavity Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Nasal Cavity Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4918"/>
@@ -7072,8 +7080,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Thymus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Thymus Cancer</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Thymus Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thymus Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Thymus Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4962"/>
@@ -7173,8 +7181,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Large Bowel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Large Intestine</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Colorectal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Colorectal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Colorectal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C4978"/>
@@ -7298,8 +7306,8 @@
         <oboInOwl:hasExactSynonym>Mixed Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Mixed Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Mixed Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixed Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C6930"/>
@@ -7349,8 +7357,8 @@
         <oboInOwl:hasExactSynonym>Lymphoid and Plasmacytic Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Lymphoid and Plasmacytic Tumour</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Lymphocytic Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lymphocytic Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7065"/>
@@ -7470,8 +7478,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Testis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Testis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Testicular Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Testicular Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Testicular Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7251"/>
@@ -7538,8 +7546,8 @@
         <oboInOwl:hasExactSynonym>Peritoneal and Retroperitoneal Neoplasms</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Peritoneal and Retroperitoneal Tumors</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Peritoneal and Retroperitoneal Neoplasms</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peritoneal and Retroperitoneal Neoplasms</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peritoneal and Retroperitoneal Neoplasms</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7337"/>
@@ -7583,8 +7591,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Lung</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Lung</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Lung Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Lung Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7377"/>
@@ -7662,8 +7670,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Prostate</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Prostate</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Prostate Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Prostate Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Prostate Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7378"/>
@@ -7734,8 +7742,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Anus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Anus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Anal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Anal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Anal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7379"/>
@@ -7807,8 +7815,8 @@
         <oboInOwl:hasExactSynonym>Malignant Vascular Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Vascular Neoplasms, Malignant</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Vascular Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vascular Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vascular Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7390"/>
@@ -7888,8 +7896,8 @@
         <oboInOwl:hasExactSynonym>Malignant Vaginal Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Vaginal Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Vaginal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vaginal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vaginal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7410"/>
@@ -7986,8 +7994,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103102"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Ovarian Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ovarian Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ovarian Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7431"/>
@@ -8117,8 +8125,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Esophagus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Esophagus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Esophageal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Esophageal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Esophageal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7478"/>
@@ -8200,8 +8208,8 @@
         <oboInOwl:hasExactSynonym>Neoplasm, Fallopian Tube, Malignant</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tumor, Fallopian Tube, Malignant</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Fallopian Tube Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Fallopian Tube Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Fallopian Tube Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7480"/>
@@ -8300,8 +8308,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Gallbladder</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Gallbladder</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Gallbladder Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gallbladder Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gallbladder Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7481"/>
@@ -8374,8 +8382,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Larynx</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Larynx</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Laryngeal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Laryngeal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Laryngeal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7484"/>
@@ -8466,8 +8474,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Accessory Sinus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Paranasal Sinus</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Paranasal Sinus Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Paranasal Sinus Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Paranasal Sinus Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7487"/>
@@ -8582,8 +8590,8 @@
         <oboInOwl:hasExactSynonym>Malignant Vulvar Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Vulvar Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Vulvar Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vulvar Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Vulvar Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7502"/>
@@ -8670,8 +8678,8 @@
         <oboInOwl:hasExactSynonym>Malignant Urethral Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Urethral Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Urethral Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urethral Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urethral Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7507"/>
@@ -8758,8 +8766,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138188"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Renal Pelvis and Ureter Carcinoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renal Pelvis and Ureter Carcinoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renal Pelvis and Ureter Carcinoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7515"/>
@@ -8810,8 +8818,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Small Bowel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Small Intestine</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Small Intestinal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Small Intestinal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Small Intestinal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7523"/>
@@ -8933,8 +8941,8 @@
         <oboInOwl:hasExactSynonym>Malignant Ureteral Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Ureteral Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Ureter Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ureter Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ureter Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7543"/>
@@ -9019,8 +9027,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Pharynx</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Pharynx</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Pharyngeal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pharyngeal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pharyngeal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7545"/>
@@ -9098,8 +9106,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Penis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Penis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Penile Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Penile Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Penile Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7547"/>
@@ -9172,8 +9180,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Kidney</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Kidney</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Kidney Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Kidney Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Kidney Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C7548"/>
@@ -9258,8 +9266,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Sternum</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Sternum</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Sternal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Sternal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Sternal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8408"/>
@@ -9338,8 +9346,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103107"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Male Reproductive System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Male Reproductive System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Male Reproductive System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C8561"/>
@@ -9432,8 +9440,8 @@
         <oboInOwl:hasExactSynonym>Malignant Neoplasm of the Pancreas</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Pancreatic Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Pancreatic Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pancreatic Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Pancreatic Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9005"/>
@@ -9502,8 +9510,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C99147"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Sarcoma</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarcoma</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarcoma</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9118"/>
@@ -9631,8 +9639,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138188"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C138190"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Myeloid Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeloid Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myeloid Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9290"/>
@@ -9693,8 +9701,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C103132"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Urinary System Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urinary System Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Urinary System Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9297"/>
@@ -9776,8 +9784,8 @@
         <oboInOwl:hasExactSynonym>Malignant Uterine Cervix Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Uterine Cervix Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Cervical Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cervical Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Cervical Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9311"/>
@@ -9941,8 +9949,8 @@
         <obo:NCIT_P366>Malignant_Oral_Neoplasm</obo:NCIT_P366>
         <oboInOwl:hasExactSynonym>Malignant Oral Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Oral Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Oral Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Oral Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9316"/>
@@ -9978,8 +9986,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Stomach</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Gastric Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gastric Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Gastric Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9331"/>
@@ -10051,8 +10059,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Appendix</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Appendix</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Appendix Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Appendix Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Appendix Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9333"/>
@@ -10141,8 +10149,8 @@
         <oboInOwl:hasExactSynonym>Urinary Bladder Malignant Neoplasm</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Urinary Bladder Malignant Tumor</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Bladder Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bladder Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Bladder Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9334"/>
@@ -10290,8 +10298,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Breast</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Breast</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Breast Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Breast Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Breast Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9335"/>
@@ -10369,8 +10377,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Ear</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Ear</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Ear Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ear Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Ear Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9337"/>
@@ -10449,8 +10457,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C116977"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C126659"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Peripheral Primitive Neuroectodermal Tumor</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peripheral Primitive Neuroectodermal Tumor</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peripheral Primitive Neuroectodermal Tumor</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9341"/>
@@ -10552,8 +10560,8 @@
         <oboInOwl:hasExactSynonym>Malignant Tumor of Trachea</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Malignant Tumor of the Trachea</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label>Malignant Tracheal Neoplasm</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Tracheal Neoplasm</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malignant Tracheal Neoplasm</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9346"/>
@@ -10620,21 +10628,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PDXO_00000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_00000000">
-        <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">pdxo</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PDXO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this is a test definition</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test synonym</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological system</skos:prefLabel>
     </owl:Class>
     
 
@@ -10642,9 +10643,9 @@
     <!-- http://purl.obolibrary.org/obo/PDXO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PDXO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_00000000"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">morphological</skos:prefLabel>
     </owl:Class>
     
 
@@ -10655,6 +10656,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</skos:prefLabel>
     </owl:Class>
 </rdf:RDF>
 

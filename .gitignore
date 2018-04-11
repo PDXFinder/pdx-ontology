@@ -4,4 +4,3 @@ src/ontology/mirror/*
 src/ontology/pdxo.obo
 src/ontology/pdxo.owl
 semantic.cache
-bin/

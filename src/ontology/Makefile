@@ -16,12 +16,13 @@ NCIT = ../../imports/ncit.owl
 GENERATED = ./results/pdx-generated.owl
 PREFIX = "PDXO: http://purl.obolibrary.org/obo/PDXO_"
 NCITPREFIX = "NCIT: http://purl.obolibrary.org/obo/NCIT_"
+UPPER = ./imports/upper_class.owl
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(SRC) $(ONT).owl $(ONT).obo $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl
+all: sparql_test $(SRC) $(ONT).owl $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl #$(ONT).obo
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -48,7 +49,7 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 $(GENERATED):../templates/pdx-cancer.tsv
-	$(ROBOT) merge --input $(SRC) template --merge-before --prefix $(PREFIX) --prefix $(NCITPREFIX) --template ../templates/pdx-cancer.tsv --output $(GENERATED)
+	$(ROBOT) merge --input $(UPPER) template --merge-before --prefix $(PREFIX) --prefix $(NCITPREFIX) --template ../templates/pdx-cancer.tsv reason -s true -m false -r ELK --output $(GENERATED)
 
 # ----------------------------------------
 # Import modules
@@ -89,6 +90,9 @@ results/ncit-xrefs.txt: ../templates/pdxslim.py
 results/ncit_module.owl: results/ncit-xrefs.txt
 	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
 	
+results/ncit_module2.owl: results/replacelabel.py
+	python results/replacelabel.py > results/ncit_module2.owl
+
 ### creating the slim
 
 ### SPARQL query
@@ -101,8 +105,8 @@ pdx-slim.owl: $(GENERATED)
 ### Merging ttl with template terms, resulting in the slim annotation of "pdx_slim" being applied to the terms
 ### no term annotations are added at this point
 
-pdx-ncit.owl: $(GENERATED) results/ncit_module.owl pdx-slim.owl
-	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module.owl --input pdx-slim.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
+pdx-ncit.owl: $(GENERATED) results/ncit_module2.owl pdx-slim.owl
+	$(ROBOT) merge --input $(GENERATED) --input results/ncit_module2.owl --input pdx-slim.owl --prefix $(PREFIX) --prefix $(NCITPREFIX) -o pdx-ncit.owl
 
 ### owltools extraction of annotations
 ### adds ncit annotations to the merged slim and generated file.
