@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pdxo/pdxo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pdxo/releases/2018-04-11/pdxo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pdxo/releases/2018-04-23/pdxo.owl"/>
         <rdfs:comment>PDX Ontology</rdfs:comment>
     </owl:Ontology>
     

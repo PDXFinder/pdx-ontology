@@ -16,17 +16,10 @@ OLS should now be running at http://localhost:8080
 
 ## Versions
 
-### Stable release versions
-
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/pdxo.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
-
 ### Editors' version
 
 Editors of this ontology should use the edit version, [/src/templates/pdx-cancer.tsv](/src/templates/pdx-cancer.tsv).
+
 **NOTE:** It is important to define parent terms before the child terms in this template. Mandatory fields are the ID, Label, Parent and Preferred Label.
 
 Once the edited template file has been saved, you can run the makefile.
