@@ -5,6 +5,15 @@
 
 This ontology... YOUR DESCRIPTION HERE
 
+## Build a OLS docker instance with ontologies in
+
+```
+docker build . -t pdxo-ols
+docker run -p 8080:8080 -t pdxo-ols 
+``` 
+
+OLS should now be running at http://localhost:8080
+
 ## Versions
 
 ### Stable release versions
