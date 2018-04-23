@@ -1,0 +1,17 @@
+
+"@context":
+
+ontologies:
+
+## PDXO
+
+  - id: pdxo
+    preferredPrefix: PDXO
+    title: Patient derived xenograft cancer ontology
+    description: Application ontology including a subset of NCIt for the PDX database
+    uri: http://www.ebi.ac.uk/ols/ontologies/pdxo
+    base_uri:
+      - http://purl.obolibrary.org/obo/pdxo/pdxo.owl
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : file:///opt/ols/ontologies/pdxo.owl
