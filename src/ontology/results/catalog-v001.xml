@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1523440479849" name="duplicate:http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1523440479849" name="duplicate:http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_module2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1523440479849" name="http://purl.obolibrary.org/obo/pdxo.owl" uri="pdx-generated.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1524492768805" name="duplicate:http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1524492768805" name="duplicate:http://purl.obolibrary.org/obo/ncit.owl" uri="ncit_module2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1524492768805" name="http://purl.obolibrary.org/obo/pdxo.owl" uri="pdx-generated.owl"/>
     </group>
 </catalog>

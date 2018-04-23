@@ -29,7 +29,9 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -10654,7 +10656,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PDXO_0000001"/>
         <oboInOwl:inSubset>pdx_slim</oboInOwl:inSubset>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</rdfs:label>
-        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musculoskeletal and soft tissue cancer</skos:prefLabel>
     </owl:Class>
 </rdf:RDF>
 

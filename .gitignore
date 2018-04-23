@@ -3,8 +3,8 @@ src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/pdxo.obo
 src/ontology/pdxo.owl
-src/ontology/pdx-label.owl
 src/ontology/pdx-module.owl
 src/ontology/pdx-ncit.owl
 src/ontology/pdx-slim.owl
+src/pdxo-idranges.owl
 semantic.cache
