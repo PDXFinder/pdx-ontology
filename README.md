@@ -26,7 +26,33 @@ http://purl.obolibrary.org/obo/pdxo.owl
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/pdxo-edit.owl](src/ontology/pdxo-edit.owl)
+Editors of this ontology should use the edit version, [/src/templates/pdx-cancer.tsv](/src/templates/pdx-cancer.tsv).
+**NOTE:** It is important to define parent terms before the child terms in this template. Mandatory fields are the ID, Label, Parent and Preferred Label.
+
+Once the edited template file has been saved, you can run the makefile.
+
+```
+cd src/ontology/
+make
+
+``` 
+
+This will build the ontology from the template file.
+
+Once this is complete, you will have a src/ontology/pdxo.owl file.
+In order to release this to the top level directory:
+
+```
+make release 
+``` 
+You can now do a git commit and git push:
+
+```
+git add -u
+git commit -m "message"
+git push 
+
+``` 
 
 ## Contact
 

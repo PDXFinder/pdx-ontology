@@ -22,7 +22,7 @@ UPPER = ./imports/upper_class.owl
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test $(SRC) $(ONT).owl $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl release
+all: sparql_test $(SRC) $(ONT).owl $(GENERATED) results/ncit_module.owl pdx-slim.owl results/ncit-xrefs.txt pdx-ncit.owl pdx-module.owl #pdx-label.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(RELEASEDIR) &&\
@@ -80,7 +80,12 @@ mirror/%.owl: $(SRC)
 # Slim & Annotations
 # ----------------------------------------
 
-### creating the ncit module
+# creating the ncit module
+## uses the python script to extract all ncit uris and outputs them to a text file
+## the text file is then used to extract these terms from the ncit.owl file to form a
+## module containing all desired terms. this prevents the ncit.owl file from being directly
+## accessed by the make file or edited too often, which slows down the generation of the
+## ontology and also uses up bandwidth on git-lfs.
 
 results/ncit-xrefs.txt: ../templates/pdxslim.py
 	python ../templates/pdxslim.py > results/ncit-xrefs.txt
@@ -88,14 +93,13 @@ results/ncit-xrefs.txt: ../templates/pdxslim.py
 results/ncit_module.owl: results/ncit-xrefs.txt
 	$(ROBOT) extract  --method BOT --input $(NCIT) --term-file results/ncit-xrefs.txt --output results/ncit_module.owl
 	
-# ensures all labels are of datatype string
+# ensures all labels are of datatype string to avoid duplicates
 results/ncit_module2.owl: results/replacelabel.py
 	python results/replacelabel.py > results/ncit_module2.owl
 
-### creating the slim
-
-### SPARQL query
-### extracts the URIs and attaches inSubset pdx_slim to each term
+# creating the slim
+## SPARQL query
+## extracts the URIs and attaches inSubset pdx_slim annotation to each term
 
 pdx-slim.owl: $(GENERATED)
 	$(ROBOT) query --input $(GENERATED) --format ttl --construct $(SPARQLDIR)/construct_slim.sparql pdx-slim.owl

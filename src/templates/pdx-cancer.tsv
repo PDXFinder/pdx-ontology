@@ -2,7 +2,7 @@ ID	Label	Parent	Synonyms (use | to split multiple)	Definition	Preferred label
 ID	A rdfs:label	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000115	A skos:prefLabel
 PDXO:0000001	biological system	pdxo	test synonym	this is a test definition	biological system
 PDXO:0000002	morphological	pdxo			morphological
-PDXO:0000003	musculoskeletal and soft tissue cancer	biological system			musculoskeletal and soft tissue cancer
+PDXO:0000003	musculoskeletal and soft tissue cancer	biological system			
 NCIT:C4016	Malignant Bone Neoplasm	musculoskeletal and soft tissue cancer		this is a test definition 2	Malignant Bone Neoplasm
 NCIT:C4883	Malignant Muscle Neoplasm	musculoskeletal and soft tissue cancer			Malignant Muscle Neoplasm
 NCIT:C4867	Malignant Soft Tissue Neoplasm	musculoskeletal and soft tissue cancer			Malignant Soft Tissue Neoplasm
