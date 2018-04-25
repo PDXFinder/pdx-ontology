@@ -32,4 +32,4 @@ branches:
 ### See https://github.com/INCATools/ontology-starter-kit/issues/35
 notifications:
   email:
-    - obo-ci-reports-all@groups.io
+    - pdxfinder-internal@ebi.ac.uk
